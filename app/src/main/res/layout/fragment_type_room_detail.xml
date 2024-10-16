@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ScrollView
+        android:layout_weight="12"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_type_room_detail_carousel"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <TextView
+                android:id="@+id/type_room_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.TitleLarge"
+                android:text="\u25CF avfgng"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_view_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="\u25CF avfgng"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="\u25CF avfgng"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_adult_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="\u25CF avfgng"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_kid_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="\u25CF avfgng"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_base_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="\u25CF avfgng"/>
+<!--            <TextView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:paddingStart="15dp"-->
+<!--                android:id="@+id/type_room_status"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                style="@style/TextAppearance.Material3.BodyLarge"-->
+<!--                android:text="\u25CF avfgng"/>-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:text="\u25CF avfgng"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_preferential_service_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:id="@+id/type_room_preferential_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/button_type_room_reservation"
+        android:layout_weight="1"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:text="@string/reservation" />
+
+</LinearLayout>

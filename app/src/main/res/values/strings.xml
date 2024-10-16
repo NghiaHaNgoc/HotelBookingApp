@@ -1,0 +1,63 @@
+<resources>
+    <string name="api_endpoint">https://hotel-management-server.fly.dev/</string>
+    <string name="api_address_vietnam">https://provinces.open-api.vn/api/</string>
+    <string name="sign_in_dialog_retry">Retry</string>
+    <string name="sign_in_dialog_register">Register</string>
+
+    <string name="price">Price</string>
+    <string name="type_room">Type room</string>
+    <string name="type_room_detail">Type room detail</string>
+    <string name="view_direction">View direction</string>
+    <string name="view_direction_river">River</string>
+    <string name="view_direction_city">City</string>
+    <string name="preferential_services">Preferential services</string>
+    <string name="size">Size</string>
+    <string name="adult_capacity">Adult capacity</string>
+    <string name="kid_capacity">Kid capacity</string>
+    <string name="amenities">Amenities</string>
+    <string name="account">Account</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="firstname">Firstname</string>
+    <string name="surname">Surname</string>
+    <string name="password">Password</string>
+    <string name="login_no_account_question">Don\'t have an account?</string>
+    <string name="retry">Retry</string>
+    <string name="ok">OK</string>
+    <string name="sign_in_failed_alert_title">Sign in failed!</string>
+    <string name="sign_up_failed_alert_title">Sign up failed!</string>
+    <string name="sign_in_failed_alert_message">Email or password is invalid. Please try again or sign up new account.</string>
+    <string name="sign_up_failed_alert_message">This email already used!</string>
+    <string name="sign_in_success_message">Sign in successfully!</string>
+    <string name="sign_up_success_message">Sign up successfully!</string>
+    <string name="sign_out_success_message">Sign out successfully!</string>
+    <string name="sign_up_have_account_question">Already have an account?</string>
+    <string name="profile">Profile</string>
+    <string name="reservation">Reservation</string>
+    <string name="reserve">Reserve</string>
+    <string name="date_from">Date from</string>
+    <string name="time_from">Time from</string>
+    <string name="date_to">Date to</string>
+    <string name="time_to">Time to</string>
+    <string name="adult_number">Adult number</string>
+    <string name="kid_number">Kid number</string>
+
+    <string name="require_input_message">This field is required!</string>
+    <string name="exceed_capacity_limit_message">Exceed capacity limit!</string>
+
+
+    <string name="app_name">Hotel-Booking-App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
