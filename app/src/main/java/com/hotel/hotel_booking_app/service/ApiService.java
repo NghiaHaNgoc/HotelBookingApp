@@ -8,6 +8,7 @@ import com.google.gson.GsonBuilder;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.model.Address;
 import com.hotel.hotel_booking_app.model.ApiResponse;
+import com.hotel.hotel_booking_app.model.Reservation;
 import com.hotel.hotel_booking_app.model.TypeRoom;
 import com.hotel.hotel_booking_app.model.User;
 
@@ -27,19 +28,11 @@ public class ApiService {
         String apiEndpoint = this.context.getResources().getString(R.string.api_endpoint);
         Gson gson =
                 new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create();
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(apiEndpoint).addConverterFactory(GsonConverterFactory.create(gson)).build();
+        Retrofit retrofit =
+                new Retrofit.Builder().baseUrl(apiEndpoint).addConverterFactory(GsonConverterFactory.create(gson)).build();
 
         service = retrofit.create(AllService.class);
 
-    }
-
-    public static Call<List<Address.Province>> getAllAddress(Context context) {
-        String apiEndpoint = context.getResources().getString(R.string.api_address_vietnam);
-        Gson gson =
-                new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create();
-        Retrofit retrofit =
-                new Retrofit.Builder().baseUrl(apiEndpoint).addConverterFactory(GsonConverterFactory.create(gson)).build();
-        return retrofit.create(AddressService.class).getAllAddress();
     }
 
     public Call<ApiResponse<User.SignInOutput>> signIn(User.SignInInput input) {
@@ -60,6 +53,11 @@ public class ApiService {
 
     public Call<ApiResponse<ArrayList<TypeRoom>>> getListTypeRoom() {
         return service.getListTypeRoom();
+    }
+
+    // Reservation
+    public Call<ApiResponse<Reservation>> addReservation(Reservation.ReservationInput input) {
+        return service.addReservation(getAuthorization(), input);
     }
 
     private String getAuthorization() {

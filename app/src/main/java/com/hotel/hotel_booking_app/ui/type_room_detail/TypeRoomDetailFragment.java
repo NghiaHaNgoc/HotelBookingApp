@@ -1,5 +1,6 @@
 package com.hotel.hotel_booking_app.ui.type_room_detail;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -77,9 +78,14 @@ public class TypeRoomDetailFragment extends Fragment {
 
         binding.buttonTypeRoomReservation.setOnClickListener(view -> {
             NavController navController = Navigation.findNavController(getView());
-            Bundle bundle = new Bundle();
-            bundle.putString("type_room", typeRoomJson);
-            navController.navigate(R.id.nav_reservation, bundle);
+            if (getContext().getSharedPreferences("account", Context.MODE_PRIVATE).getBoolean("isSignedIn", false)) {
+                Bundle bundle = new Bundle();
+                bundle.putString("type_room", typeRoomJson);
+                navController.navigate(R.id.nav_reservation, bundle);
+            } else {
+                navController.navigate(R.id.nav_sign_in);
+            }
+
         });
         return root;
 

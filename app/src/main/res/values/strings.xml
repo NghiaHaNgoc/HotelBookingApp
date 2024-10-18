@@ -4,6 +4,8 @@
     <string name="sign_in_dialog_retry">Retry</string>
     <string name="sign_in_dialog_register">Register</string>
 
+    <string name="success">Success</string>
+    <string name="reservation_success">Reservation success</string>
     <string name="price">Price</string>
     <string name="type_room">Type room</string>
     <string name="type_room_detail">Type room detail</string>
@@ -36,16 +38,29 @@
     <string name="profile">Profile</string>
     <string name="reservation">Reservation</string>
     <string name="reserve">Reserve</string>
+    <string name="datetime_from">Datetime from</string>
     <string name="date_from">Date from</string>
     <string name="time_from">Time from</string>
+    <string name="datetime_to">Datetime to</string>
     <string name="date_to">Date to</string>
     <string name="time_to">Time to</string>
+    <string name="number_people">Number people</string>
     <string name="adult_number">Adult number</string>
     <string name="kid_number">Kid number</string>
+    <string name="total_price">Total price</string>
+    <string name="reservation_id">Reservation ID</string>
+    <string name="reservation_history">Reservation history</string>
+    <string name="created_at">Created at</string>
+    <string name="room">Room</string>
+    <string name="room_number">Room number</string>
+    <string name="floor">Floor</string>
 
     <string name="require_input_message">This field is required!</string>
     <string name="exceed_capacity_limit_message">Exceed capacity limit!</string>
-
+    <string name="invalid_input">Invalid input!</string>
+    <string name="datetime_from_must_less_than_to_message">Datetime from must be less than datetime to!</string>
+    <string name="out_of_room_title">Out of room!</string>
+    <string name="out_of_room_message">Please select others time or select other type room.</string>
 
     <string name="app_name">Hotel-Booking-App</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

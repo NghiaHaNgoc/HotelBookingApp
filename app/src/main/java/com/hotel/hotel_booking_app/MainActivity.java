@@ -6,6 +6,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -137,11 +138,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (item.getItemId() == R.id.action_sign_out) {
             handleSignOut();
+            navController.popBackStack(R.id.nav_home, false);
             Toast.makeText(this, getResources().getString(R.string.sign_out_success_message),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
-
 
         NavController navController = Navigation.findNavController(this,
                 R.id.nav_host_fragment_content_main);
