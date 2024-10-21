@@ -7,4 +7,5 @@ public class Room {
     public Integer floor;
     public Integer status;
     public String updatedAt;
+    public TypeRoom typeRoom;
 }

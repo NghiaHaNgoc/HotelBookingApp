@@ -54,6 +54,11 @@
     <string name="room">Room</string>
     <string name="room_number">Room number</string>
     <string name="floor">Floor</string>
+    <string name="status">Status</string>
+    <string name="status_open">Open</string>
+    <string name="status_in_progress">In progress</string>
+    <string name="status_end">End</string>
+    <string name="status_cancel">Cancel</string>
 
     <string name="require_input_message">This field is required!</string>
     <string name="exceed_capacity_limit_message">Exceed capacity limit!</string>
