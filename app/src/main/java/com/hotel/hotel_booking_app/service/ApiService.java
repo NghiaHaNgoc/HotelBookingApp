@@ -60,6 +60,10 @@ public class ApiService {
         return service.addReservation(getAuthorization(), input);
     }
 
+    public Call<ApiResponse<List<Reservation>>> listReservation() {
+        return service.listReservation(getAuthorization());
+    }
+
     private String getAuthorization() {
         return "Bearer " + context.getSharedPreferences("account",
                 Context.MODE_PRIVATE).getString("token", "");

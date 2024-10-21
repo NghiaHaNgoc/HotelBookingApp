@@ -1,12 +1,10 @@
 package com.hotel.hotel_booking_app;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 this.getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment_content_main);
         navController = navHostFragment.getNavController();
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_profile, R.id.nav_reservation_history)
                 .setOpenableLayout(drawer)
                 .build();
 
@@ -70,13 +68,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-        handleSignIn(getSharedPreferences("account", MODE_PRIVATE));
+        SharedPreferences accountSharedPreferences = getSharedPreferences("account", MODE_PRIVATE);
+        handleSignIn(accountSharedPreferences);
 
         accountPreferencesListener = (sharedPreferences, s) -> {
             handleSignIn(sharedPreferences);
         };
-        getSharedPreferences("account", MODE_PRIVATE).registerOnSharedPreferenceChangeListener(accountPreferencesListener);
+        accountSharedPreferences.registerOnSharedPreferenceChangeListener(accountPreferencesListener);
 //        Navigation.
 
 

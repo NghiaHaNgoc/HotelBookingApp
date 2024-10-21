@@ -17,6 +17,13 @@
         android:name="com.hotel.hotel_booking_app.ui.profile.ProfileFragment"
         android:label="@string/sign_up"
         tools:layout="@layout/fragment_profile"/>
+
+    <fragment
+        android:id="@+id/nav_reservation_history"
+        android:name="com.hotel.hotel_booking_app.ui.reservation_history.ReservationHistoryFragment"
+        android:label="@string/reservation_history"
+        tools:layout="@layout/fragment_reservation_history"/>
+
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.hotel.hotel_booking_app.ui.gallery.GalleryFragment"

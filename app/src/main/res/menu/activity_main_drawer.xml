@@ -14,8 +14,8 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/profile" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_reservation_history"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/reservation_history" />
     </group>
 </menu>
