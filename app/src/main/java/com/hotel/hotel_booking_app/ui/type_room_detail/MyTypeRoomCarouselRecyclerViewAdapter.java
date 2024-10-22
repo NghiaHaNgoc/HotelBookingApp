@@ -14,9 +14,9 @@ import java.util.List;
 
 public class MyTypeRoomCarouselRecyclerViewAdapter extends RecyclerView.Adapter<MyTypeRoomCarouselRecyclerViewAdapter.ViewHolder> {
 
-    private final List<TypeRoom.ImageTypeRoom> mValues;
+    private final List<String> mValues;
 
-    public MyTypeRoomCarouselRecyclerViewAdapter(List<TypeRoom.ImageTypeRoom> items) {
+    public MyTypeRoomCarouselRecyclerViewAdapter(List<String> items) {
         mValues = items;
     }
 
@@ -29,7 +29,7 @@ public class MyTypeRoomCarouselRecyclerViewAdapter extends RecyclerView.Adapter<
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        Glide.with(holder.image).load(mValues.get(position).link).into(holder.image);
+        Glide.with(holder.image).load(mValues.get(position)).into(holder.image);
     }
 
     @Override
@@ -39,7 +39,7 @@ public class MyTypeRoomCarouselRecyclerViewAdapter extends RecyclerView.Adapter<
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final ImageView image;
-        public TypeRoom.ImageTypeRoom mItem;
+        public String mItem;
 
         public ViewHolder(FragmentTypeRoomCarouselImageBinding binding) {
             super(binding.getRoot());

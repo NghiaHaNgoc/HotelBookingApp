@@ -29,8 +29,9 @@ import java.util.TimeZone;
 public class ReservationHistoryItemRecyclerViewAdapter extends RecyclerView.Adapter<ReservationHistoryItemRecyclerViewAdapter.ViewHolder>{
     private Context context;
     private List<Reservation> reservationList;
-    ZoneId currentZoneId = TimeZone.getDefault().toZoneId();
-    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm");
+    private OnClickListener onClickListener;
+    private ZoneId currentZoneId;
+    private DateTimeFormatter dateTimeFormatter;
 
     public ReservationHistoryItemRecyclerViewAdapter(Context context, List<Reservation> list) {
         this.context = context;
@@ -39,6 +40,8 @@ public class ReservationHistoryItemRecyclerViewAdapter extends RecyclerView.Adap
         } else {
             reservationList = new ArrayList<>();
         }
+        currentZoneId = TimeZone.getDefault().toZoneId();
+        dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm");
     }
 
     @NonNull
@@ -94,6 +97,12 @@ public class ReservationHistoryItemRecyclerViewAdapter extends RecyclerView.Adap
         ZonedDateTime checkoutAtObj = Instant.parse(reservation.checkoutAt).atZone(currentZoneId);
         holder.checkoutAt.setText(checkoutAtObj.format(dateTimeFormatter));
 
+        // Handle onclick listener
+        holder.itemView.setOnClickListener(view -> {
+            if (onClickListener != null) {
+                onClickListener.onClick(reservation);
+            }
+        });
 
     }
 
@@ -124,5 +133,13 @@ public class ReservationHistoryItemRecyclerViewAdapter extends RecyclerView.Adap
             room = binding.reservationHistoryItemRoom;
             status = binding.reservationHistoryItemStatus;
         }
+    }
+
+    public void setOnClickListener(OnClickListener onClickListener) {
+        this.onClickListener = onClickListener;
+    }
+
+    public interface OnClickListener {
+        void onClick(Reservation item);
     }
 }

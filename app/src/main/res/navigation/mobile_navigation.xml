@@ -15,7 +15,7 @@
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.hotel.hotel_booking_app.ui.profile.ProfileFragment"
-        android:label="@string/sign_up"
+        android:label="@string/profile"
         tools:layout="@layout/fragment_profile"/>
 
     <fragment
@@ -25,16 +25,11 @@
         tools:layout="@layout/fragment_reservation_history"/>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.hotel.hotel_booking_app.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_reservation_history_detail"
+        android:name="com.hotel.hotel_booking_app.ui.reservation_history.ReservationHistoryDetailFragment"
+        android:label="@string/reservation_history_detail"
+        tools:layout="@layout/fragment_reservation_history_detail"/>
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.hotel.hotel_booking_app.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_type_room_detail"
         android:name="com.hotel.hotel_booking_app.ui.type_room_detail.TypeRoomDetailFragment"

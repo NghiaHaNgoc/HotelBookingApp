@@ -50,6 +50,7 @@
     <string name="total_price">Total price</string>
     <string name="reservation_id">Reservation ID</string>
     <string name="reservation_history">Reservation history</string>
+    <string name="reservation_history_detail">Reservation history detail</string>
     <string name="created_at">Created at</string>
     <string name="room">Room</string>
     <string name="room_number">Room number</string>
@@ -59,6 +60,10 @@
     <string name="status_in_progress">In progress</string>
     <string name="status_end">End</string>
     <string name="status_cancel">Cancel</string>
+    <string name="check_in_at">Check in at</string>
+    <string name="checkout_at">Check out at</string>
+    <string name="updated_at">Updated at</string>
+    <string name="name">Name</string>
 
     <string name="require_input_message">This field is required!</string>
     <string name="exceed_capacity_limit_message">Exceed capacity limit!</string>

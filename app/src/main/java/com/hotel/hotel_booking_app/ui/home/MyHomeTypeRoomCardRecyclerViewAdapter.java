@@ -28,7 +28,7 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
     public MyHomeTypeRoomCardRecyclerViewAdapter(Context context, List<TypeRoom> items) {
         this.context = context;
         if (items != null)
-          mValues = items;
+            mValues = items;
         else
             mValues = new ArrayList<>();
     }
@@ -51,9 +51,8 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
                 mValues.get(position).basePrice);
         holder.price.setText(price);
 
-        TypeRoom.ImageTypeRoom imageLink = mValues.get(position).images.get(0);
-        if (imageLink != null)
-            Glide.with(holder.image).load(imageLink.link).placeholder(R.drawable.ic_menu_gallery).into(holder.image);
+        if (!mValues.get(position).images.isEmpty())
+            Glide.with(holder.image).load(mValues.get(position).images.get(0)).placeholder(R.drawable.ic_menu_gallery).into(holder.image);
         holder.itemView.setOnClickListener(view -> {
             if (onClickListener != null) {
                 onClickListener.onClick(mValues.get(position));

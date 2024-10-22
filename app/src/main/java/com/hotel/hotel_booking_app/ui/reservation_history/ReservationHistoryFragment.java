@@ -5,13 +5,16 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.gson.Gson;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.databinding.FragmentReservationHistoryBinding;
 import com.hotel.hotel_booking_app.model.ApiResponse;
@@ -52,9 +55,15 @@ public class ReservationHistoryFragment extends Fragment {
             @Override
             public void onResponse(Call<ApiResponse<List<Reservation>>> call,
                                    Response<ApiResponse<List<Reservation>>> response) {
+                ReservationHistoryItemRecyclerViewAdapter adapter = new ReservationHistoryItemRecyclerViewAdapter(getContext(), response.body().result);
+                adapter.setOnClickListener(item -> {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("reservation", new Gson().toJson(item));
+                    NavController navController = Navigation.findNavController(getView());
+                    navController.navigate(R.id.nav_reservation_history_detail, bundle);
+                });
                 binding.reservationHistoryItemList
-                        .setAdapter(new ReservationHistoryItemRecyclerViewAdapter(getContext(),
-                                response.body().result));
+                        .setAdapter(adapter);
             }
 
             @Override
