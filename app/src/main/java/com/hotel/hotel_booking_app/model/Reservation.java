@@ -11,6 +11,7 @@ public class Reservation {
     public Integer status;
     public Integer totalPrice;
     public String updatedAt;
+    public String createdAt;
     public Room room;
 
     public static class ReservationInput {

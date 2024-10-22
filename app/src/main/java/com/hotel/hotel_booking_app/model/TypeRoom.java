@@ -15,10 +15,5 @@ public class TypeRoom {
     public String createdAt;
     public String updatedAt;
     public List<Integer> amenities;
-    public List<ImageTypeRoom> images;
-
-    public static class ImageTypeRoom {
-        public Integer id;
-        public String link;
-    }
+    public List<String> images;
 }

@@ -2,10 +2,7 @@ package com.hotel.hotel_booking_app.ui.reservation;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
-import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,7 +10,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.text.InputFilter;
-import android.text.Spanned;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +28,6 @@ import com.hotel.hotel_booking_app.service.ApiService;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.ZonedDateTime;
-import java.time.temporal.TemporalUnit;
 import java.util.Calendar;
 import java.util.TimeZone;
 import java.util.concurrent.atomic.AtomicReference;
@@ -151,8 +146,8 @@ public class ReservationFragment extends Fragment {
         });
 
         // Show type room header
-        TypeRoom.ImageTypeRoom imageLink = typeRoom.images.get(0);
-        Glide.with(binding.imageReservation).load(imageLink.link).placeholder(R.drawable.ic_menu_camera).into(binding.imageReservation);
+        if (!typeRoom.images.isEmpty())
+            Glide.with(binding.imageReservation).load(typeRoom.images.get(0)).placeholder(R.drawable.ic_menu_camera).into(binding.imageReservation);
         binding.textReservationTypeRoomTitle.setText(typeRoom.title);
         // Show capability
         binding.inputLayoutAdultNumber.setHint(String.format("%s (1 - %s)",
