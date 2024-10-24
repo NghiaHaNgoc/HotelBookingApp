@@ -63,10 +63,10 @@ public class ReservationHistoryFragment extends Fragment {
             } else {
                 Navigation.findNavController(getView()).popBackStack(R.id.nav_home, false);
             }
+        } else {
+            setupFragment();
         }
         isFirstLaunch = false;
-
-        setupFragment();
 
     }
 
@@ -89,7 +89,6 @@ public class ReservationHistoryFragment extends Fragment {
 
             @Override
             public void onFailure(Call<ApiResponse<List<Reservation>>> call, Throwable throwable) {
-
             }
         });
     }
