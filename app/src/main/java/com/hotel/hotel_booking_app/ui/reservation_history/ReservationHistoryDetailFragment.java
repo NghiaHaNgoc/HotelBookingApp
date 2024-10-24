@@ -52,9 +52,22 @@ public class ReservationHistoryDetailFragment extends Fragment {
 
         binding = FragmentReservationHistoryDetailBinding.inflate(inflater, container, false);
 
+        // Inflate the layout for this fragment
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        setupFragment();
+    }
+
+    private void setupFragment() {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm");
         // Id
-        String reservationId = String.format("● %s: ", getResources().getString(R.string.reservation_id));
+        String reservationId = String.format("● %s: ",
+                getResources().getString(R.string.reservation_id));
         binding.textReservationHistoryDetailReservationId.setText(reservationId);
         appendBoldText(binding.textReservationHistoryDetailReservationId, reservation.id + "");
 
@@ -62,18 +75,22 @@ public class ReservationHistoryDetailFragment extends Fragment {
         String checkinAt = String.format("● %s: ", getResources().getString(R.string.check_in_at));
         binding.textReservationHistoryDetailCheckinAt.setText(checkinAt);
         ZonedDateTime checkinAtObj = Instant.parse(reservation.checkinAt).atZone(currentZoneId);
-        appendBoldText(binding.textReservationHistoryDetailCheckinAt, checkinAtObj.format(dateTimeFormatter));
+        appendBoldText(binding.textReservationHistoryDetailCheckinAt,
+                checkinAtObj.format(dateTimeFormatter));
 
         // Checkout
         String checkoutAt = String.format("● %s: ", getResources().getString(R.string.checkout_at));
         binding.textReservationHistoryDetailCheckoutAt.setText(checkoutAt);
         ZonedDateTime checkoutAtObj = Instant.parse(reservation.checkoutAt).atZone(currentZoneId);
-        appendBoldText(binding.textReservationHistoryDetailCheckoutAt, checkoutAtObj.format(dateTimeFormatter));
+        appendBoldText(binding.textReservationHistoryDetailCheckoutAt,
+                checkoutAtObj.format(dateTimeFormatter));
 
         // Adult number
-        String adultNumber = String.format("● %s: ", getResources().getString(R.string.adult_number));
+        String adultNumber = String.format("● %s: ",
+                getResources().getString(R.string.adult_number));
         binding.textReservationHistoryDetailAdultNumber.setText(adultNumber);
-        appendBoldText(binding.textReservationHistoryDetailAdultNumber, reservation.adultNumber + "");
+        appendBoldText(binding.textReservationHistoryDetailAdultNumber,
+                reservation.adultNumber + "");
 
         // Kid number
         String kidNumber = String.format("● %s: ", getResources().getString(R.string.kid_number));
@@ -86,39 +103,42 @@ public class ReservationHistoryDetailFragment extends Fragment {
         String statusRes = "";
         switch (reservation.status) {
             case 1:
-                statusRes = getResources().getString(R.string.status_open).toUpperCase();
-                appendBoldText(binding.textReservationHistoryDetailStatus, statusRes);
+                statusRes = getResources().getString(R.string.status_waiting).toUpperCase();
                 break;
             case 2:
-                statusRes = getResources().getString(R.string.status_in_progress).toUpperCase();
-                appendBoldText(binding.textReservationHistoryDetailStatus, statusRes);
+                statusRes = getResources().getString(R.string.status_open).toUpperCase();
                 break;
             case 3:
-                statusRes = getResources().getString(R.string.status_end).toUpperCase();
-                appendBoldText(binding.textReservationHistoryDetailStatus, statusRes);
+                statusRes = getResources().getString(R.string.status_in_progress).toUpperCase();
                 break;
             case 4:
+                statusRes = getResources().getString(R.string.status_end).toUpperCase();
+                break;
+            case 5:
                 statusRes = getResources().getString(R.string.status_cancel).toUpperCase();
-                appendBoldText(binding.textReservationHistoryDetailStatus, statusRes);
                 break;
         }
+        appendBoldText(binding.textReservationHistoryDetailStatus, statusRes);
 
         // Total price
         String totalPrice = String.format("● %s: ", getResources().getString(R.string.total_price));
         binding.textReservationHistoryDetailTotalPrice.setText(totalPrice);
-        appendBoldText(binding.textReservationHistoryDetailTotalPrice, reservation.totalPrice + "VND");
+        appendBoldText(binding.textReservationHistoryDetailTotalPrice, reservation.totalPrice +
+                "VND");
 
         // updated at
         String updatedAt = String.format("● %s: ", getResources().getString(R.string.updated_at));
         binding.textReservationHistoryDetailUpdatedAt.setText(updatedAt);
         ZonedDateTime updatedAtObj = Instant.parse(reservation.updatedAt).atZone(currentZoneId);
-        appendBoldText(binding.textReservationHistoryDetailUpdatedAt, updatedAtObj.format(dateTimeFormatter));
+        appendBoldText(binding.textReservationHistoryDetailUpdatedAt,
+                updatedAtObj.format(dateTimeFormatter));
 
         // Created at
         String createdAt = String.format("● %s: ", getResources().getString(R.string.created_at));
         binding.textReservationHistoryDetailCreatedAt.setText(createdAt);
         ZonedDateTime createdAtObj = Instant.parse(reservation.createdAt).atZone(currentZoneId);
-        appendBoldText(binding.textReservationHistoryDetailCreatedAt, createdAtObj.format(dateTimeFormatter));
+        appendBoldText(binding.textReservationHistoryDetailCreatedAt,
+                createdAtObj.format(dateTimeFormatter));
 
         // Room number
         String roomNumber = String.format("● %s: ", getResources().getString(R.string.room_number));
@@ -131,17 +151,18 @@ public class ReservationHistoryDetailFragment extends Fragment {
         appendBoldText(binding.textReservationHistoryDetailFloor, reservation.room.floor + "");
 
         //Type room
-        String typeRoomTitle = String.format("● %s: ", getResources().getString(R.string.type_room));
+        String typeRoomTitle = String.format("● %s: ",
+                getResources().getString(R.string.type_room));
         binding.textReservationHistoryDetailTypeRoomTitle.setText(typeRoomTitle);
-        appendBoldText(binding.textReservationHistoryDetailTypeRoomTitle, reservation.room.typeRoom.title);
+        appendBoldText(binding.textReservationHistoryDetailTypeRoomTitle,
+                reservation.room.typeRoom.title);
 
-        // Inflate the layout for this fragment
-        return binding.getRoot();
     }
 
     private void appendBoldText(TextView tv, String text) {
         SpannableString spannableString = new SpannableString(text);
-        spannableString.setSpan(new StyleSpan(Typeface.BOLD), 0, text.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        spannableString.setSpan(new StyleSpan(Typeface.BOLD), 0, text.length(),
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         tv.append(spannableString);
     }
 }

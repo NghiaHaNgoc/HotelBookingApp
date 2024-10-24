@@ -118,6 +118,7 @@
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -125,7 +126,7 @@
 
         <Button
             android:id="@+id/button_reservation_success_reservation_history"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="20dp"
@@ -135,7 +136,7 @@
 
         <Button
             android:id="@+id/button_reservation_success_home"
-            style="@style/Widget.MaterialComponents.Button"
+            style="@style/Widget.Material3.Button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"

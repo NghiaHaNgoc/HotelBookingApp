@@ -21,12 +21,13 @@
             android:padding="20dp">
 
             <TextView
-                style="@style/TextAppearance.MaterialComponents.Headline5"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="@string/reservation" />
+                android:text="@string/reservation"
+                android:layout_marginBottom="20dp"/>
 
             <TextView
                 android:id="@+id/text_reservation_history_detail_reservation_id"
@@ -149,7 +150,7 @@
         android:orientation="horizontal">
 
         <Button
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
