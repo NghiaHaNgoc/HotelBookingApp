@@ -10,12 +10,18 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.textfield.TextInputLayout;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.databinding.FragmentSignInBinding;
 import com.hotel.hotel_booking_app.databinding.NavHeaderMainBinding;
@@ -79,46 +85,124 @@ public class SignInFragment extends Fragment {
             }
         });
 
+        TextInputLayout emailInputLayout = binding.emailInputLayout;
+        TextInputLayout passwordInputLayout = binding.passwordInputLayout;
+
+        binding.loginEmail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                emailInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        binding.loginPassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                passwordInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
         binding.buttonSignInSubmit.setOnClickListener(view -> {
+
             String email = binding.loginEmail.getText().toString();
             String password = binding.loginPassword.getText().toString();
-            User.SignInInput signInInput = new User.SignInInput(
-                    email,
-                    password
-            );
-            new ApiService(getContext()).signIn(signInInput).enqueue(new Callback<ApiResponse<User.SignInOutput>>() {
-                @Override
-                public void onResponse(Call<ApiResponse<User.SignInOutput>> call,
-                                       Response<ApiResponse<User.SignInOutput>> response) {
-                    ApiResponse<User.SignInOutput> res = response.body();
-                    if (res != null && res.status == 200) {
 
-                        SharedPreferences.Editor editor =  accountPreferences.edit();
-                        editor.putBoolean("isSignedIn", true);
-                        editor.putString("email", email);
-                        editor.putString("firstname", res.result.firstname);
-                        editor.putString("surname", res.result.surname);
-                        editor.putString("linkAvatar", res.result.linkAvatar);
-                        editor.putString("token", res.result.token);
-                        editor.apply();
-                        Toast.makeText(getContext(),
-                                getResources().getString(R.string.sign_up_success_message),
-                                Toast.LENGTH_SHORT).show();
-                        navController.popBackStack(R.id.nav_home, false);
+            boolean isValidForm = validateFormSignIn(emailInputLayout, passwordInputLayout, email, password);
+            if (isValidForm) {
+                User.SignInInput signInInput = new User.SignInInput(
+                        email,
+                        password
+                );
+                new ApiService(getContext()).signIn(signInInput).enqueue(new Callback<ApiResponse<User.SignInOutput>>() {
+                    @Override
+                    public void onResponse(Call<ApiResponse<User.SignInOutput>> call,
+                                           Response<ApiResponse<User.SignInOutput>> response) {
+                        ApiResponse<User.SignInOutput> res = response.body();
+                        if (res != null && res.status == 200) {
 
-                    } else {
-                        alertSignInFailed.show();
+                            SharedPreferences.Editor editor =  accountPreferences.edit();
+                            editor.putBoolean("isSignedIn", true);
+                            editor.putString("email", email);
+                            editor.putString("firstname", res.result.firstname);
+                            editor.putString("surname", res.result.surname);
+                            editor.putString("linkAvatar", res.result.linkAvatar);
+                            editor.putString("token", res.result.token);
+                            editor.apply();
+                            Toast.makeText(getContext(),
+                                    getResources().getString(R.string.sign_up_success_message),
+                                    Toast.LENGTH_SHORT).show();
+                            navController.popBackStack(R.id.nav_home, false);
+
+                        } else {
+                            alertSignInFailed.show();
+                        }
                     }
-                }
 
-                @Override
-                public void onFailure(Call<ApiResponse<User.SignInOutput>> call,
-                                      Throwable throwable) {
+                    @Override
+                    public void onFailure(Call<ApiResponse<User.SignInOutput>> call,
+                                          Throwable throwable) {
 
-                }
-            });
+                    }
+                });
+            }
         });
         return root;
+    }
+
+    private boolean validateFormSignIn(
+            TextInputLayout emailInputLayout,
+            TextInputLayout passwordInputLayout,
+            String email,
+            String password
+    ) {
+        String messageErrorEmail = "";
+        String messageErrorPassword = "";
+
+        // validate email
+        if (TextUtils.isEmpty(email)) {
+            messageErrorEmail = "Email is required !";
+        }
+        if (
+            !Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
+            messageErrorEmail.isEmpty()
+        ) {
+            messageErrorEmail = "Email is wrong format !";
+        }
+        if (!messageErrorEmail.isEmpty()) {
+            emailInputLayout.setError(messageErrorEmail);
+        }
+
+        //validate password
+        if (TextUtils.isEmpty(password)) {
+            messageErrorPassword = "Password is required !";
+        }
+        if (password.length() < 6 && messageErrorPassword.isEmpty()) {
+            messageErrorPassword = "Password must be at least 6 characters !";
+        }
+        if (!messageErrorPassword.isEmpty()) {
+            passwordInputLayout.setError(messageErrorPassword);
+        }
+
+        return messageErrorEmail.isEmpty() && messageErrorPassword.isEmpty();
     }
 }
