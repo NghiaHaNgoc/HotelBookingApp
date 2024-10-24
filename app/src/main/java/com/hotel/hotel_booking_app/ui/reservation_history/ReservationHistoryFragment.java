@@ -51,29 +51,6 @@ public class ReservationHistoryFragment extends Fragment {
 
         binding.reservationHistoryItemList.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        new ApiService(getContext()).listReservation().enqueue(new Callback<ApiResponse<List<Reservation>>>() {
-            @Override
-            public void onResponse(Call<ApiResponse<List<Reservation>>> call,
-                                   Response<ApiResponse<List<Reservation>>> response) {
-                ReservationHistoryItemRecyclerViewAdapter adapter = new ReservationHistoryItemRecyclerViewAdapter(getContext(), response.body().result);
-                adapter.setOnClickListener(item -> {
-                    Bundle bundle = new Bundle();
-                    bundle.putString("reservation", new Gson().toJson(item));
-                    NavController navController = Navigation.findNavController(getView());
-                    navController.navigate(R.id.nav_reservation_history_detail, bundle);
-                });
-                binding.reservationHistoryItemList
-                        .setAdapter(adapter);
-            }
-
-            @Override
-            public void onFailure(Call<ApiResponse<List<Reservation>>> call, Throwable throwable) {
-
-            }
-        });
-//        binding.reservationHistoryItemList.setAdapter();
-        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_reservation_history, container, false);
         return binding.getRoot();
     }
 
@@ -88,5 +65,32 @@ public class ReservationHistoryFragment extends Fragment {
             }
         }
         isFirstLaunch = false;
+
+        setupFragment();
+
+    }
+
+    private void setupFragment() {
+        new ApiService(getContext()).listReservation().enqueue(new Callback<ApiResponse<List<Reservation>>>() {
+            @Override
+            public void onResponse(Call<ApiResponse<List<Reservation>>> call,
+                                   Response<ApiResponse<List<Reservation>>> response) {
+                ReservationHistoryItemRecyclerViewAdapter adapter =
+                        new ReservationHistoryItemRecyclerViewAdapter(getContext(),
+                                response.body().result);
+                adapter.setOnClickListener(item -> {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("reservation", new Gson().toJson(item));
+                    NavController navController = Navigation.findNavController(getView());
+                    navController.navigate(R.id.nav_reservation_history_detail, bundle);
+                });
+                binding.reservationHistoryItemList.setAdapter(adapter);
+            }
+
+            @Override
+            public void onFailure(Call<ApiResponse<List<Reservation>>> call, Throwable throwable) {
+
+            }
+        });
     }
 }

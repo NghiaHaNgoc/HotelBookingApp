@@ -56,6 +56,7 @@
     <string name="room_number">Room number</string>
     <string name="floor">Floor</string>
     <string name="status">Status</string>
+    <string name="status_waiting">Waiting</string>
     <string name="status_open">Open</string>
     <string name="status_in_progress">In progress</string>
     <string name="status_end">End</string>

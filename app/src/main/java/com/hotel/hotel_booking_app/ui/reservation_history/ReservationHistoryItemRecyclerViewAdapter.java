@@ -68,21 +68,26 @@ public class ReservationHistoryItemRecyclerViewAdapter extends RecyclerView.Adap
         int statusColor;
         switch (reservation.status) {
             case 1:
-                statusStr = context.getResources().getString(R.string.status_open).toUpperCase();
+                statusStr = context.getResources().getString(R.string.status_waiting).toUpperCase();
                 statusColor = context.getResources().getColor(R.color.teal_700, context.getTheme());
                 appendColoredBoldText(holder.status, statusStr, statusColor);
                 break;
             case 2:
+                statusStr = context.getResources().getString(R.string.status_open).toUpperCase();
+                statusColor = context.getResources().getColor(R.color.purple_200, context.getTheme());
+                appendColoredBoldText(holder.status, statusStr, statusColor);
+                break;
+            case 3:
                 statusStr = context.getResources().getString(R.string.status_in_progress).toUpperCase();
                 statusColor = context.getResources().getColor(R.color.purple_700, context.getTheme());
                 appendColoredBoldText(holder.status, statusStr, statusColor);
                 break;
-            case 3:
+            case 4:
                 statusStr = context.getResources().getString(R.string.status_end).toUpperCase();
                 statusColor = context.getResources().getColor(R.color.black, context.getTheme());
                 appendColoredBoldText(holder.status, statusStr, statusColor);
                 break;
-            case 4:
+            case 5:
                 statusStr = context.getResources().getString(R.string.status_cancel).toUpperCase();
                 appendColoredBoldText(holder.status, statusStr, Color.RED);
                 break;
