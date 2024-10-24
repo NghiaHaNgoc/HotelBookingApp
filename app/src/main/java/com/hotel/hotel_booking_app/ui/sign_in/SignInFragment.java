@@ -85,6 +85,10 @@ public class SignInFragment extends Fragment {
             }
         });
 
+        binding.buttonSignInToSignUp.setOnClickListener(v -> {
+            navController.navigate(R.id.action_nav_sign_in_to_nav_sign_up);
+        });
+
         TextInputLayout emailInputLayout = binding.emailInputLayout;
         TextInputLayout passwordInputLayout = binding.passwordInputLayout;
 

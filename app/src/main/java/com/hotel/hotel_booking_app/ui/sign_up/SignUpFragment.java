@@ -11,12 +11,17 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputLayout;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.databinding.FragmentSignUpBinding;
 import com.hotel.hotel_booking_app.model.ApiResponse;
@@ -63,12 +68,89 @@ public class SignUpFragment extends Fragment {
 
                     }
                 });
+        binding.buttonSignUpToSignIn.setOnClickListener(v -> {
+            navController.navigate(R.id.action_nav_sign_up_to_nav_sign_in);
+        });
+
+        TextInputLayout firstnameInputLayout = binding.firstnameInputLayout;
+        TextInputLayout surnameInputLayout = binding.surnameInputLayout;
+        TextInputLayout emailInputLayout = binding.emailInputLayout;
+        TextInputLayout passwordInputLayout = binding.passwordInputLayout;
+
+        binding.signUpFirstname.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                firstnameInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        binding.signUpSurname.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                surnameInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        binding.signUpEmail.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                emailInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        binding.signUpPassword.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                passwordInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
         binding.signUpSubmit.setOnClickListener(view -> {
             String firstname = binding.signUpFirstname.getText().toString().trim();
             String surname = binding.signUpSurname.getText().toString().trim();
             String email = binding.signUpEmail.getText().toString().trim();
             String password = binding.signUpPassword.getText().toString().trim();
-            if (checkAllFields(firstname, surname, email, password)) {
+            if (validateFormSignUp(firstname, surname, email, password)) {
                 User.SignUpInput signUpInput = new User.SignUpInput(firstname, surname, email, password);
                 new ApiService(getContext()).signUp(signUpInput).enqueue(new Callback<ApiResponse<User.SignInOutput>>() {
                     @Override
@@ -104,30 +186,59 @@ public class SignUpFragment extends Fragment {
 
     }
 
-    private boolean checkAllFields(String firstname, String surname, String email, String password) {
-        String errorMessage = getContext().getResources().getString(R.string.require_input_message);
-        boolean isValid = true;
-        if (firstname.isEmpty()) {
-            binding.signUpFirstname.setError(errorMessage);
-            isValid = false;
+    private boolean validateFormSignUp(
+            String firstname,
+            String surname,
+            String email,
+            String password
+    ) {
+        String messageErrorFirstname = "";
+        String messageErrorSurname = "";
+        String messageErrorEmail = "";
+        String messageErrorPassword = "";
+
+        //validate firstname
+        if (TextUtils.isEmpty(firstname)) {
+            messageErrorFirstname = "Firstname is required !";
+        }
+        if (!messageErrorFirstname.isEmpty()) {
+            binding.firstnameInputLayout.setError(messageErrorFirstname);
         }
 
-        if (surname.isEmpty()) {
-            binding.signUpSurname.setError(errorMessage);
-            isValid = false;
+        //validate surname
+        if (TextUtils.isEmpty(surname)) {
+            messageErrorSurname = "Surname is required !";
+        }
+        if (!messageErrorSurname.isEmpty()) {
+            binding.surnameInputLayout.setError(messageErrorSurname);
         }
 
-        if (email.isEmpty()) {
-            binding.signUpEmail.setError(errorMessage);
-            isValid = false;
+        // validate email
+        if (TextUtils.isEmpty(email)) {
+            messageErrorEmail = "Email is required !";
+        }
+        if (
+            !Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
+            messageErrorEmail.isEmpty()
+        ) {
+            messageErrorEmail = "Email is wrong format !";
+        }
+        if (!messageErrorEmail.isEmpty()) {
+            binding.emailInputLayout.setError(messageErrorEmail);
         }
 
-        if (password.isEmpty()) {
-            binding.signUpPassword.setError(errorMessage);
-            isValid = false;
+        //validate password
+        if (TextUtils.isEmpty(password)) {
+            messageErrorPassword = "Password is required !";
+        }
+        if (password.length() < 6 && messageErrorPassword.isEmpty()) {
+            messageErrorPassword = "Password must be at least 6 characters !";
+        }
+        if (!messageErrorPassword.isEmpty()) {
+            binding.passwordInputLayout.setError(messageErrorPassword);
         }
 
-        // after all validation return true.
-        return isValid;
+        return messageErrorEmail.isEmpty() && messageErrorPassword.isEmpty() &&
+                messageErrorFirstname.isEmpty() && messageErrorSurname.isEmpty();
     }
 }
