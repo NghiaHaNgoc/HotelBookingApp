@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-
+    implementation("com.github.dhaval2404:imagepicker:2.1")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)

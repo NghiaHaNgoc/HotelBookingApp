@@ -20,10 +20,23 @@
     <string name="account">Account</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
+
     <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="gender">Gender</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
     <string name="firstname">Firstname</string>
     <string name="surname">Surname</string>
     <string name="password">Password</string>
+    <string name="province">Province</string>
+    <string name="district">District</string>
+    <string name="ward">Ward</string>
+    <string name="address">Address</string>
+
+    <string name="upload_image">Upload Image</string>
+
     <string name="login_no_account_question">Don\'t have an account?</string>
     <string name="retry">Retry</string>
     <string name="ok">OK</string>
@@ -80,6 +93,9 @@
     <string name="warning_payment_message">Please do not change the transfer amount and transfer content while making the transfer transaction.</string>
 
     <string name="app_name">Hotel-Booking-App</string>
+    <string name="booking_history">Booking history</string>
+    <string name="change_password">Change password</string>
+    <string name="back_to_home_page">Back to home page</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
