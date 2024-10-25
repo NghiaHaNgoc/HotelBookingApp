@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.reservation_history.ReservationHistoryDetailFragment">
@@ -11,12 +11,13 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="20dp">
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical"
             android:padding="20dp">
 
@@ -25,9 +26,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="@string/reservation"
-                android:layout_marginBottom="20dp"/>
+                android:text="@string/reservation" />
 
             <TextView
                 android:id="@+id/text_reservation_history_detail_reservation_id"
@@ -140,13 +141,26 @@
                 android:text="@string/type_room"
 
                 />
+
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_reservation_history_detail_payment"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/qr_code_scanner"
+        android:text="@string/payment"
+        android:visibility="gone" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -165,7 +179,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="text" />
+            android:text="@string/edit" />
     </LinearLayout>
 
 </LinearLayout>

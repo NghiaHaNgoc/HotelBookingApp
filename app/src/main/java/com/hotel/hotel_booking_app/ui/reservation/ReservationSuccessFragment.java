@@ -108,10 +108,18 @@ public class ReservationSuccessFragment extends Fragment {
                 createdAtObj.format(dateTimeFormatter));
         binding.textReservationSuccessCreatedAt.setText(createdAt);
 
+        // Action payment
+        binding.buttonReservationSuccessPayment.setOnClickListener(view -> {
+            NavController navController = Navigation.findNavController(getView());
+            Bundle bundle = new Bundle();
+            bundle.putString("reservation", new Gson().toJson(reservation));
+            navController.navigate(R.id.nav_reservation_payment, bundle);
+        });
         // Action go home
         binding.buttonReservationSuccessHome.setOnClickListener(view -> {
             NavController navController = Navigation.findNavController(getView());
             navController.popBackStack(R.id.nav_home, false);
+
         });
 
         return root;

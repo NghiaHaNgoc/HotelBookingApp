@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.reservation.ReservationSuccessFragment">
 
@@ -23,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="10dp"
         android:padding="20dp">
 
         <LinearLayout
@@ -122,8 +124,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        >
+        <Button
+            android:id="@+id/button_reservation_success_payment"
+            android:drawableLeft="@drawable/qr_code_scanner"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal">
-
         <Button
             android:id="@+id/button_reservation_success_reservation_history"
             style="@style/Widget.Material3.Button.OutlinedButton"
