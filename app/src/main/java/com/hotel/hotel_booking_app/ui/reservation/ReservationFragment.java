@@ -225,7 +225,6 @@ public class ReservationFragment extends Fragment {
                 public void onResponse(Call<ApiResponse<Reservation>> call,
                                        Response<ApiResponse<Reservation>> response) {
                     alertDialogLoading.dismiss();
-                    Reservation result = response.body().result;
                     if (response.body().status != 200) {
                         alertDialogError.setTitle(getResources().getString(R.string.out_of_room_title));
                         alertDialogError.setMessage(getResources().getString(R.string.out_of_room_message));

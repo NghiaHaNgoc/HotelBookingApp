@@ -104,6 +104,7 @@ public class ReservationHistoryDetailFragment extends Fragment {
         switch (reservation.status) {
             case 1:
                 statusRes = getResources().getString(R.string.status_waiting).toUpperCase();
+                binding.buttonReservationHistoryDetailPayment.setVisibility(View.VISIBLE);
                 break;
             case 2:
                 statusRes = getResources().getString(R.string.status_open).toUpperCase();

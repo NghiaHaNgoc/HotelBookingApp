@@ -65,6 +65,11 @@
     <string name="checkout_at">Check out at</string>
     <string name="updated_at">Updated at</string>
     <string name="name">Name</string>
+    <string name="payment">Payment</string>
+    <string name="edit">Edit</string>
+    <string name="bank">Bank</string>
+    <string name="warning">Warning</string>
+    <string name="account_number">Account number</string>
 
     <string name="require_input_message">This field is required!</string>
     <string name="exceed_capacity_limit_message">Exceed capacity limit!</string>
@@ -72,6 +77,7 @@
     <string name="datetime_from_must_less_than_to_message">Datetime from must be less than datetime to!</string>
     <string name="out_of_room_title">Out of room!</string>
     <string name="out_of_room_message">Please select others time or select other type room.</string>
+    <string name="warning_payment_message">Please do not change the transfer amount and transfer content while making the transfer transaction.</string>
 
     <string name="app_name">Hotel-Booking-App</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
