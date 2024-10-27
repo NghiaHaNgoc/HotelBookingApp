@@ -3,12 +3,12 @@ package com.hotel.hotel_booking_app.ui.profile;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.PickVisualMediaRequest;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -24,7 +24,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -65,10 +64,11 @@ import retrofit2.Response;
 public class ProfileFragment extends Fragment {
     private FragmentProfileBinding binding;
     private AlertDialog alertDialogLoading;
+    private ActivityResultLauncher<PickVisualMediaRequest> pickMedia;
     private SharedPreferences accountSharedPreferences;
-    private List<Province> provincesList = new ArrayList<>();
-    private List<District> districtsList = new ArrayList<>();
-    private List<Ward> wardsList = new ArrayList<>();
+    private final List<Province> provincesList = new ArrayList<>();
+    private final List<District> districtsList = new ArrayList<>();
+    private final List<Ward> wardsList = new ArrayList<>();
     private User user;
 
     public ProfileFragment() {
@@ -122,6 +122,37 @@ public class ProfileFragment extends Fragment {
 
             wardsList.add(new Ward(wardName, wardId, districtId));
         }
+
+        pickMedia =
+                registerForActivityResult(new ActivityResultContracts.PickVisualMedia(), uri -> {
+                    // Callback is invoked after the user selects a media item or closes the
+                    // photo picker.
+                    if (uri != null) {
+                        try {
+                            InputStream inputStream = getContext().getContentResolver().openInputStream(uri);
+                            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+                            byte[] buffer = new byte[1024];
+                            int bytesRead;
+                            while ((bytesRead = inputStream.read(buffer)) != -1) {
+                                outputStream.write(buffer, 0, bytesRead);
+                            }
+                            byte[] imageBytes = outputStream.toByteArray();
+                            String base64Image = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+
+                            // Sử dụng base64Image theo nhu cầu của bạn
+                            user.setLinkAvatar(base64Image);
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        Glide.with(this)
+                                .load(uri)
+                                .apply(RequestOptions.circleCropTransform())
+                                .into(binding.avatarProfile);
+                    } else {
+                        Log.d("PhotoPicker", "No media selected");
+                    }
+                });
 
     }
 
@@ -184,11 +215,11 @@ public class ProfileFragment extends Fragment {
         });
 
         binding.btnUpload.setOnClickListener(v -> {
-            ImagePicker.with(this)
-                    .crop()	    			//Crop image(Optional), Check Customization for more option
-                    .compress(1024)			//Final image size will be less than 1 MB(Optional)
-                    .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
-                    .start();
+            pickMedia.launch(
+                    new PickVisualMediaRequest.Builder()
+                            .setMediaType(ActivityResultContracts.PickVisualMedia.ImageOnly.INSTANCE)
+                            .build()
+            );
         });
 
         binding.radioGroupGender.setOnCheckedChangeListener((group, checkedId) -> {
@@ -210,6 +241,7 @@ public class ProfileFragment extends Fragment {
             zonedBirthDate.set(zonedBirthDate.get().withYear(i).withMonth(i1 + 1).withDayOfMonth(i2));
             String dateFormat = String.format("%02d-%02d-%02d", i2, i1 + 1, i);
             binding.birthdateProfile.setText(dateFormat);
+            user.setBirthDay(dateFormat);
 
         }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DATE));
         birthDatePickerDialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
@@ -219,8 +251,8 @@ public class ProfileFragment extends Fragment {
 
         binding.btnUpdateProfile.setOnClickListener(v -> {
             alertDialogLoading.show();
-            Instant birthdate = zonedBirthDate.get().toInstant();
-            user.setBirthDay(birthdate.toString());
+//            Instant birthdate = zonedBirthDate.get().toInstant();
+//            user.setBirthDay(birthdate.toString());
             user.setAddress(binding.addressProfile.getText().toString());
             handleSubmitFormProfile();
         });
@@ -231,35 +263,6 @@ public class ProfileFragment extends Fragment {
 
         // Inflate the layout for this fragment
         return binding.getRoot();
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Uri uri = data.getData();
-        // Chuyển Uri thành chuỗi Base64
-        try {
-            InputStream inputStream = getContext().getContentResolver().openInputStream(uri);
-            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-            byte[] buffer = new byte[1024];
-            int bytesRead;
-            while ((bytesRead = inputStream.read(buffer)) != -1) {
-                outputStream.write(buffer, 0, bytesRead);
-            }
-            byte[] imageBytes = outputStream.toByteArray();
-            String base64Image = Base64.encodeToString(imageBytes, Base64.DEFAULT);
-
-            // Sử dụng base64Image theo nhu cầu của bạn
-            user.setLinkAvatar(base64Image);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        Glide.with(this)
-                .load(uri)
-                .apply(RequestOptions.circleCropTransform())
-                .into(binding.avatarProfile);
-
     }
 
     private <T> void setListAutoComplete(AutoCompleteTextView autoCompleteTextView, List<T> listOption) {
@@ -349,12 +352,6 @@ public class ProfileFragment extends Fragment {
 
                 if (res != null && res.status == 200) {
                     user = new User(res.result);
-//                    user.setSurname(res.result.surname);
-//                    user.setFirstname(res.result.firstname);
-//                    user.setEmail(res.result.email);
-//                    user.setPhone(res.result.phone);
-//                    user.setLinkAvatar(res.result.linkAvatar);
-//                    user.setGender(res.result.gender);
                     // setDefaultValue to form profile
                     setDefaultValueFormProfile();
                 } else {
@@ -374,6 +371,9 @@ public class ProfileFragment extends Fragment {
     }
 
     private void handleSubmitFormProfile() {
+        user.setFirstname(Objects.requireNonNull(binding.firstnameProfile.getText()).toString());
+        user.setSurname(Objects.requireNonNull(binding.surnameProfile.getText()).toString());
+        user.setPhone(Objects.requireNonNull(binding.phoneProfile.getText()).toString());
         new ApiService(getContext()).updateProfile(user).enqueue(new Callback<ApiResponse<User>>() {
             @Override
             public void onResponse(Call<ApiResponse<User>> call,
@@ -385,8 +385,15 @@ public class ProfileFragment extends Fragment {
                     editor.putString("email", user.email);
                     editor.putString("firstname", user.firstname);
                     editor.putString("surname", user.surname);
-                    editor.putString("linkAvatar", user.linkAvatar);
+                    editor.putString("linkAvatar", res.result.linkAvatar);
                     editor.apply();
+                    binding.fullnameProfile.setText(
+                            String.format(
+                                    "%s %s",
+                                    user.firstname,
+                                    user.surname
+                            )
+                    );
                     Toast.makeText(getContext(),
                             getResources().getString(R.string.update_success),
                             Toast.LENGTH_SHORT).show();
