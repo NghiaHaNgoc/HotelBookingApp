@@ -1,0 +1,5642 @@
+[
+  {
+    "district_name": "Quận Ba Đình",
+    "district_id": 1,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_ba_dinh",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hoàn Kiếm",
+    "district_id": 2,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_hoan_kiem",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Tây Hồ",
+    "district_id": 3,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_tay_ho",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Long Biên",
+    "district_id": 4,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_long_bien",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Cầu Giấy",
+    "district_id": 5,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_cau_giay",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Đống Đa",
+    "district_id": 6,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_dong_da",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hai Bà Trưng",
+    "district_id": 7,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_hai_ba_trung",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hoàng Mai",
+    "district_id": 8,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_hoang_mai",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Thanh Xuân",
+    "district_id": 9,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_thanh_xuan",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sóc Sơn",
+    "district_id": 16,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_soc_son",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đông Anh",
+    "district_id": 17,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_anh",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gia Lâm",
+    "district_id": 18,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_gia_lam",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Nam Từ Liêm",
+    "district_id": 19,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_nam_tu_liem",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Trì",
+    "district_id": 20,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_tri",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Bắc Từ Liêm",
+    "district_id": 21,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_bac_tu_liem",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mê Linh",
+    "district_id": 250,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_me_linh",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hà Đông",
+    "district_id": 268,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_ha_dong",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Sơn Tây",
+    "district_id": 269,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_son_tay",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ba Vì",
+    "district_id": 271,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ba_vi",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phúc Thọ",
+    "district_id": 272,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phuc_tho",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đan Phượng",
+    "district_id": 273,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dan_phuong",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoài Đức",
+    "district_id": 274,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoai_duc",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quốc Oai",
+    "district_id": 275,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quoc_oai",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạch Thất",
+    "district_id": 276,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thach_that",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chương Mỹ",
+    "district_id": 277,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chuong_my",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Oai",
+    "district_id": 278,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_oai",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thường Tín",
+    "district_id": 279,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thuong_tin",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Xuyên",
+    "district_id": 280,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_xuyen",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ứng Hòa",
+    "district_id": 281,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ung_hoa",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mỹ Đức",
+    "district_id": 282,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_my_duc",
+    "province_id": 1,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hà Giang",
+    "district_id": 24,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ha_giang",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đồng Văn",
+    "district_id": 26,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_van",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mèo Vạc",
+    "district_id": 27,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_meo_vac",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Minh",
+    "district_id": 28,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_minh",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quản Bạ",
+    "district_id": 29,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quan_ba",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vị Xuyên",
+    "district_id": 30,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vi_xuyen",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Mê",
+    "district_id": 31,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_me",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoàng Su Phì",
+    "district_id": 32,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoang_su_phi",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Xín Mần",
+    "district_id": 33,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_xin_man",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Quang",
+    "district_id": 34,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_quang",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quang Bình",
+    "district_id": 35,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quang_binh",
+    "province_id": 2,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Cao Bằng",
+    "district_id": 40,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_cao_bang",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bảo Lâm",
+    "district_id": 42,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bao_lam",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bảo Lạc",
+    "district_id": 43,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bao_lac",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hà Quảng",
+    "district_id": 45,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ha_quang",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trùng Khánh",
+    "district_id": 47,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_trung_khanh",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hạ Lang",
+    "district_id": 48,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ha_lang",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quảng Hòa",
+    "district_id": 49,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quang_hoa",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoà An",
+    "district_id": 51,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoa_an",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nguyên Bình",
+    "district_id": 52,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nguyen_binh",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạch An",
+    "district_id": 53,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thach_an",
+    "province_id": 4,
+    "wards": []
+  },
+  {
+    "district_name": "Thành Phố Bắc Kạn",
+    "district_id": 58,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_bac_kan",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Pác Nặm",
+    "district_id": 60,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_pac_nam",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ba Bể",
+    "district_id": 61,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ba_be",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ngân Sơn",
+    "district_id": 62,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ngan_son",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bạch Thông",
+    "district_id": 63,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bach_thong",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chợ Đồn",
+    "district_id": 64,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cho_don",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chợ Mới",
+    "district_id": 65,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cho_moi",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Na Rì",
+    "district_id": 66,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_na_ri",
+    "province_id": 6,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tuyên Quang",
+    "district_id": 70,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tuyen_quang",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lâm Bình",
+    "district_id": 71,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lam_binh",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Na Hang",
+    "district_id": 72,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_na_hang",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chiêm Hóa",
+    "district_id": 73,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chiem_hoa",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hàm Yên",
+    "district_id": 74,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ham_yen",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Sơn",
+    "district_id": 75,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_son",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sơn Dương",
+    "district_id": 76,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_son_duong",
+    "province_id": 8,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Lào Cai",
+    "district_id": 80,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_lao_cai",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bát Xát",
+    "district_id": 82,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bat_xat",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường Khương",
+    "district_id": 83,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_khuong",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Si Ma Cai",
+    "district_id": 84,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_si_ma_cai",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Hà",
+    "district_id": 85,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_ha",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bảo Thắng",
+    "district_id": 86,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bao_thang",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bảo Yên",
+    "district_id": 87,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bao_yen",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Sa Pa",
+    "district_id": 88,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_sa_pa",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Bàn",
+    "district_id": 89,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_ban",
+    "province_id": 10,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Điện Biên Phủ",
+    "district_id": 94,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_dien_bien_phu",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Mường Lay",
+    "district_id": 95,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_muong_lay",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường Nhé",
+    "district_id": 96,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_nhe",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường Chà",
+    "district_id": 97,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_cha",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tủa Chùa",
+    "district_id": 98,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tua_chua",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tuần Giáo",
+    "district_id": 99,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuan_giao",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Điện Biên",
+    "district_id": 100,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dien_bien",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Điện Biên Đông",
+    "district_id": 101,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dien_bien_dong",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường Ảng",
+    "district_id": 102,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_ang",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nậm Pồ",
+    "district_id": 103,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_po",
+    "province_id": 11,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Lai Châu",
+    "district_id": 105,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_lai_chau",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tam Đường",
+    "district_id": 106,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tam_duong",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường Tè",
+    "district_id": 107,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_te",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sìn Hồ",
+    "district_id": 108,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_sin_ho",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phong Thổ",
+    "district_id": 109,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phong_tho",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Than Uyên",
+    "district_id": 110,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_than_uyen",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Uyên",
+    "district_id": 111,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_uyen",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nậm Nhùn",
+    "district_id": 112,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_nhun",
+    "province_id": 12,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Sơn La",
+    "district_id": 116,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_son_la",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quỳnh Nhai",
+    "district_id": 118,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quynh_nhai",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thuận Châu",
+    "district_id": 119,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thuan_chau",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường La",
+    "district_id": 120,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_la",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Yên",
+    "district_id": 121,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_yen",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phù Yên",
+    "district_id": 122,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_yen",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mộc Châu",
+    "district_id": 123,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_moc_chau",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Châu",
+    "district_id": 124,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_chau",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mai Sơn",
+    "district_id": 125,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mai_son",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sông Mã",
+    "district_id": 126,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_song_ma",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sốp Cộp",
+    "district_id": 127,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_sop_cop",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vân Hồ",
+    "district_id": 128,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_ho",
+    "province_id": 14,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Yên Bái",
+    "district_id": 132,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_yen_bai",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Nghĩa Lộ",
+    "district_id": 133,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_nghia_lo",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lục Yên",
+    "district_id": 135,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_luc_yen",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Yên",
+    "district_id": 136,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_yen",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mù Căng Chải",
+    "district_id": 137,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mu_cang_chai",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trấn Yên",
+    "district_id": 138,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tran_yen",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trạm Tấu",
+    "district_id": 139,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tram_tau",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Chấn",
+    "district_id": 140,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_chan",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Bình",
+    "district_id": 141,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_binh",
+    "province_id": 15,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hòa Bình",
+    "district_id": 148,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_hoa_binh",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đà Bắc",
+    "district_id": 150,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_da_bac",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lương Sơn",
+    "district_id": 152,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_luong_son",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kim Bôi",
+    "district_id": 153,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kim_boi",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cao Phong",
+    "district_id": 154,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cao_phong",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Lạc",
+    "district_id": 155,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_lac",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mai Châu",
+    "district_id": 156,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mai_chau",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lạc Sơn",
+    "district_id": 157,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lac_son",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Thủy",
+    "district_id": 158,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_thuy",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lạc Thủy",
+    "district_id": 159,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lac_thuy",
+    "province_id": 17,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Thái Nguyên",
+    "district_id": 164,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_thai_nguyen",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Sông Công",
+    "district_id": 165,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_song_cong",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Định Hóa",
+    "district_id": 167,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dinh_hoa",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Lương",
+    "district_id": 168,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_luong",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đồng Hỷ",
+    "district_id": 169,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_hy",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Võ Nhai",
+    "district_id": 170,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vo_nhai",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đại Từ",
+    "district_id": 171,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dai_tu",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Phổ Yên",
+    "district_id": 172,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_pho_yen",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Bình",
+    "district_id": 173,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_binh",
+    "province_id": 19,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Lạng Sơn",
+    "district_id": 178,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_lang_son",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tràng Định",
+    "district_id": 180,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_trang_dinh",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Gia",
+    "district_id": 181,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_gia",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Lãng",
+    "district_id": 182,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_lang",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cao Lộc",
+    "district_id": 183,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cao_loc",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Quan",
+    "district_id": 184,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_quan",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Sơn",
+    "district_id": 185,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_son",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hữu Lũng",
+    "district_id": 186,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_huu_lung",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chi Lăng",
+    "district_id": 187,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chi_lang",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lộc Bình",
+    "district_id": 188,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_loc_binh",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đình Lập",
+    "district_id": 189,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dinh_lap",
+    "province_id": 20,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hạ Long",
+    "district_id": 193,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ha_long",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Móng Cái",
+    "district_id": 194,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_mong_cai",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Cẩm Phả",
+    "district_id": 195,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_cam_pha",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Uông Bí",
+    "district_id": 196,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_uong_bi",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Liêu",
+    "district_id": 198,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_lieu",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiên Yên",
+    "district_id": 199,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tien_yen",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đầm Hà",
+    "district_id": 200,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dam_ha",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hải Hà",
+    "district_id": 201,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hai_ha",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ba Chẽ",
+    "district_id": 202,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ba_che",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vân Đồn",
+    "district_id": 203,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_don",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Đông Triều",
+    "district_id": 205,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_dong_trieu",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Quảng Yên",
+    "district_id": 206,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_quang_yen",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cô Tô",
+    "district_id": 207,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_co_to",
+    "province_id": 22,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Bắc Giang",
+    "district_id": 213,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_bac_giang",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Thế",
+    "district_id": 215,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_the",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Yên",
+    "district_id": 216,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_yen",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lạng Giang",
+    "district_id": 217,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lang_giang",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lục Nam",
+    "district_id": 218,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_luc_nam",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lục Ngạn",
+    "district_id": 219,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_luc_ngan",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sơn Động",
+    "district_id": 220,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_son_dong",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Dũng",
+    "district_id": 221,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_dung",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Việt Yên",
+    "district_id": 222,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_viet_yen",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hiệp Hòa",
+    "district_id": 223,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hiep_hoa",
+    "province_id": 24,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Việt Trì",
+    "district_id": 227,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_viet_tri",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Phú Thọ",
+    "district_id": 228,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_phu_tho",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đoan Hùng",
+    "district_id": 230,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_doan_hung",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hạ Hoà",
+    "district_id": 231,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ha_hoa",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Ba",
+    "district_id": 232,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_ba",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phù Ninh",
+    "district_id": 233,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_ninh",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Lập",
+    "district_id": 234,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_lap",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cẩm Khê",
+    "district_id": 235,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_khe",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tam Nông",
+    "district_id": 236,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tam_nong",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lâm Thao",
+    "district_id": 237,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lam_thao",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Sơn",
+    "district_id": 238,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_son",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Thuỷ",
+    "district_id": 239,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_thuy",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Sơn",
+    "district_id": 240,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_son",
+    "province_id": 25,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Vĩnh Yên",
+    "district_id": 243,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_vinh_yen",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Phúc Yên",
+    "district_id": 244,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_phuc_yen",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lập Thạch",
+    "district_id": 246,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lap_thach",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tam Dương",
+    "district_id": 247,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tam_duong",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tam Đảo",
+    "district_id": 248,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tam_dao",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Xuyên",
+    "district_id": 249,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_xuyen",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Lạc",
+    "district_id": 251,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_lac",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Tường",
+    "district_id": 252,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_tuong",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sông Lô",
+    "district_id": 253,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_song_lo",
+    "province_id": 26,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Bắc Ninh",
+    "district_id": 256,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_bac_ninh",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Phong",
+    "district_id": 258,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_phong",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Quế Võ",
+    "district_id": 259,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_que_vo",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiên Du",
+    "district_id": 260,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tien_du",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Từ Sơn",
+    "district_id": 261,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tu_son",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Thuận Thành",
+    "district_id": 262,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_thuan_thanh",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gia Bình",
+    "district_id": 263,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_gia_binh",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lương Tài",
+    "district_id": 264,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_luong_tai",
+    "province_id": 27,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hải Dương",
+    "district_id": 288,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_hai_duong",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Chí Linh",
+    "district_id": 290,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_chi_linh",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nam Sách",
+    "district_id": 291,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_sach",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Kinh Môn",
+    "district_id": 292,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_kinh_mon",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kim Thành",
+    "district_id": 293,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kim_thanh",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Hà",
+    "district_id": 294,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_ha",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cẩm Giàng",
+    "district_id": 295,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_giang",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Giang",
+    "district_id": 296,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_giang",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gia Lộc",
+    "district_id": 297,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_gia_loc",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tứ Kỳ",
+    "district_id": 298,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tu_ky",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ninh Giang",
+    "district_id": 299,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ninh_giang",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Miện",
+    "district_id": 300,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_mien",
+    "province_id": 30,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hồng Bàng",
+    "district_id": 303,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_hong_bang",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Ngô Quyền",
+    "district_id": 304,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_ngo_quyen",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Lê Chân",
+    "district_id": 305,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_le_chan",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hải An",
+    "district_id": 306,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_hai_an",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Kiến An",
+    "district_id": 307,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_kien_an",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Đồ Sơn",
+    "district_id": 308,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_do_son",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Dương Kinh",
+    "district_id": 309,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_duong_kinh",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thuỷ Nguyên",
+    "district_id": 311,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thuy_nguyen",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện An Dương",
+    "district_id": 312,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_duong",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện An Lão",
+    "district_id": 313,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_lao",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kiến Thuỵ",
+    "district_id": 314,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kien_thuy",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiên Lãng",
+    "district_id": 315,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tien_lang",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Bảo",
+    "district_id": 316,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_bao",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cát Hải",
+    "district_id": 317,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cat_hai",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bạch Long Vĩ",
+    "district_id": 318,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bach_long_vi",
+    "province_id": 31,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hưng Yên",
+    "district_id": 323,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_hung_yen",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Lâm",
+    "district_id": 325,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_lam",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Văn Giang",
+    "district_id": 326,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_giang",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Mỹ",
+    "district_id": 327,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_my",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Mỹ Hào",
+    "district_id": 328,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_my_hao",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ân Thi",
+    "district_id": 329,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_thi",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Khoái Châu",
+    "district_id": 330,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_khoai_chau",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kim Động",
+    "district_id": 331,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kim_dong",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiên Lữ",
+    "district_id": 332,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tien_lu",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phù Cừ",
+    "district_id": 333,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_cu",
+    "province_id": 33,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Thái Bình",
+    "district_id": 336,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_thai_binh",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quỳnh Phụ",
+    "district_id": 338,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quynh_phu",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hưng Hà",
+    "district_id": 339,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hung_ha",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đông Hưng",
+    "district_id": 340,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_hung",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thái Thụy",
+    "district_id": 341,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thai_thuy",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiền Hải",
+    "district_id": 342,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tien_hai",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kiến Xương",
+    "district_id": 343,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kien_xuong",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vũ Thư",
+    "district_id": 344,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vu_thu",
+    "province_id": 34,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Phủ Lý",
+    "district_id": 347,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_phu_ly",
+    "province_id": 35,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Duy Tiên",
+    "district_id": 349,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_duy_tien",
+    "province_id": 35,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kim Bảng",
+    "district_id": 350,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kim_bang",
+    "province_id": 35,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Liêm",
+    "district_id": 351,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_liem",
+    "province_id": 35,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Lục",
+    "district_id": 352,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_luc",
+    "province_id": 35,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lý Nhân",
+    "district_id": 353,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ly_nhan",
+    "province_id": 35,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Nam Định",
+    "district_id": 356,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_nam_dinh",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mỹ Lộc",
+    "district_id": 358,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_my_loc",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vụ Bản",
+    "district_id": 359,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vu_ban",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ý Yên",
+    "district_id": 360,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_y_yen",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nghĩa Hưng",
+    "district_id": 361,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nghia_hung",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nam Trực",
+    "district_id": 362,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_truc",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trực Ninh",
+    "district_id": 363,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_truc_ninh",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Xuân Trường",
+    "district_id": 364,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_xuan_truong",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Giao Thủy",
+    "district_id": 365,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_giao_thuy",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hải Hậu",
+    "district_id": 366,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hai_hau",
+    "province_id": 36,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Ninh Bình",
+    "district_id": 369,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ninh_binh",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tam Điệp",
+    "district_id": 370,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tam_diep",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nho Quan",
+    "district_id": 372,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nho_quan",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gia Viễn",
+    "district_id": 373,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_gia_vien",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoa Lư",
+    "district_id": 374,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoa_lu",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Khánh",
+    "district_id": 375,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_khanh",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kim Sơn",
+    "district_id": 376,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kim_son",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Mô",
+    "district_id": 377,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_mo",
+    "province_id": 37,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Thanh Hóa",
+    "district_id": 380,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_thanh_hoa",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Bỉm Sơn",
+    "district_id": 381,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_bim_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Sầm Sơn",
+    "district_id": 382,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_sam_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mường Lát",
+    "district_id": 384,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_muong_lat",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quan Hóa",
+    "district_id": 385,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quan_hoa",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bá Thước",
+    "district_id": 386,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ba_thuoc",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quan Sơn",
+    "district_id": 387,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quan_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lang Chánh",
+    "district_id": 388,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lang_chanh",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ngọc Lặc",
+    "district_id": 389,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ngoc_lac",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cẩm Thủy",
+    "district_id": 390,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_thuy",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạch Thành",
+    "district_id": 391,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thach_thanh",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hà Trung",
+    "district_id": 392,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ha_trung",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Lộc",
+    "district_id": 393,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_loc",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Định",
+    "district_id": 394,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_dinh",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thọ Xuân",
+    "district_id": 395,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tho_xuan",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thường Xuân",
+    "district_id": 396,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thuong_xuan",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Triệu Sơn",
+    "district_id": 397,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_trieu_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thiệu Hóa",
+    "district_id": 398,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thieu_hoa",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoằng Hóa",
+    "district_id": 399,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoang_hoa",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hậu Lộc",
+    "district_id": 400,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hau_loc",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nga Sơn",
+    "district_id": 401,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nga_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Như Xuân",
+    "district_id": 402,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nhu_xuan",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Như Thanh",
+    "district_id": 403,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nhu_thanh",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nông Cống",
+    "district_id": 404,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nong_cong",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đông Sơn",
+    "district_id": 405,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quảng Xương",
+    "district_id": 406,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quang_xuong",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Nghi Sơn",
+    "district_id": 407,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_nghi_son",
+    "province_id": 38,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Vinh",
+    "district_id": 412,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_vinh",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Cửa Lò",
+    "district_id": 413,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_cua_lo",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Thái Hoà",
+    "district_id": 414,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_thai_hoa",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quế Phong",
+    "district_id": 415,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_que_phong",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quỳ Châu",
+    "district_id": 416,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quy_chau",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kỳ Sơn",
+    "district_id": 417,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ky_son",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tương Dương",
+    "district_id": 418,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuong_duong",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nghĩa Đàn",
+    "district_id": 419,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nghia_dan",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quỳ Hợp",
+    "district_id": 420,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quy_hop",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quỳnh Lưu",
+    "district_id": 421,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quynh_luu",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Con Cuông",
+    "district_id": 422,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_con_cuong",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Kỳ",
+    "district_id": 423,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_ky",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Anh Sơn",
+    "district_id": 424,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_anh_son",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Diễn Châu",
+    "district_id": 425,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dien_chau",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Yên Thành",
+    "district_id": 426,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_yen_thanh",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đô Lương",
+    "district_id": 427,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_do_luong",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Chương",
+    "district_id": 428,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_chuong",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nghi Lộc",
+    "district_id": 429,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nghi_loc",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nam Đàn",
+    "district_id": 430,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_dan",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hưng Nguyên",
+    "district_id": 431,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hung_nguyen",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Hoàng Mai",
+    "district_id": 432,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_hoang_mai",
+    "province_id": 40,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hà Tĩnh",
+    "district_id": 436,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ha_tinh",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Hồng Lĩnh",
+    "district_id": 437,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_hong_linh",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hương Sơn",
+    "district_id": 439,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_huong_son",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đức Thọ",
+    "district_id": 440,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duc_tho",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vũ Quang",
+    "district_id": 441,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vu_quang",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nghi Xuân",
+    "district_id": 442,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nghi_xuan",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Can Lộc",
+    "district_id": 443,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_can_loc",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hương Khê",
+    "district_id": 444,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_huong_khe",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạch Hà",
+    "district_id": 445,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thach_ha",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cẩm Xuyên",
+    "district_id": 446,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_xuyen",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kỳ Anh",
+    "district_id": 447,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ky_anh",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lộc Hà",
+    "district_id": 448,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_loc_ha",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Kỳ Anh",
+    "district_id": 449,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_ky_anh",
+    "province_id": 42,
+    "wards": []
+  },
+  {
+    "district_name": "Thành Phố Đồng Hới",
+    "district_id": 450,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_dong_hoi",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Minh Hóa",
+    "district_id": 452,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_minh_hoa",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tuyên Hóa",
+    "district_id": 453,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuyen_hoa",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quảng Trạch",
+    "district_id": 454,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quang_trach",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bố Trạch",
+    "district_id": 455,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bo_trach",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quảng Ninh",
+    "district_id": 456,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quang_ninh",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lệ Thủy",
+    "district_id": 457,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_le_thuy",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Ba Đồn",
+    "district_id": 458,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_ba_don",
+    "province_id": 44,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Đông Hà",
+    "district_id": 461,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_dong_ha",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Quảng Trị",
+    "district_id": 462,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_quang_tri",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Linh",
+    "district_id": 464,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_linh",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hướng Hóa",
+    "district_id": 465,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_huong_hoa",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gio Linh",
+    "district_id": 466,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_gio_linh",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đa Krông",
+    "district_id": 467,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_da_krong",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cam Lộ",
+    "district_id": 468,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_lo",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Triệu Phong",
+    "district_id": 469,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_trieu_phong",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hải Lăng",
+    "district_id": 470,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hai_lang",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cồn Cỏ",
+    "district_id": 471,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_con_co",
+    "province_id": 45,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Huế",
+    "district_id": 474,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_hue",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phong Điền",
+    "district_id": 476,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phong_dien",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quảng Điền",
+    "district_id": 477,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_quang_dien",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Vang",
+    "district_id": 478,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_vang",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Hương Thủy",
+    "district_id": 479,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_huong_thuy",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Hương Trà",
+    "district_id": 480,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_huong_tra",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện A Lưới",
+    "district_id": 481,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_a_luoi",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Lộc",
+    "district_id": 482,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_loc",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nam Đông",
+    "district_id": 483,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_dong",
+    "province_id": 46,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Liên Chiểu",
+    "district_id": 490,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_lien_chieu",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Thanh Khê",
+    "district_id": 491,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_thanh_khe",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Hải Châu",
+    "district_id": 492,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_hai_chau",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Sơn Trà",
+    "district_id": 493,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_son_tra",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Ngũ Hành Sơn",
+    "district_id": 494,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_ngu_hanh_son",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Cẩm Lệ",
+    "district_id": 495,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_cam_le",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hòa Vang",
+    "district_id": 497,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoa_vang",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoàng Sa",
+    "district_id": 498,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoang_sa",
+    "province_id": 48,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tam Kỳ",
+    "district_id": 502,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tam_ky",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hội An",
+    "district_id": 503,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_hoi_an",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tây Giang",
+    "district_id": 504,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tay_giang",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đông Giang",
+    "district_id": 505,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_giang",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đại Lộc",
+    "district_id": 506,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dai_loc",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Điện Bàn",
+    "district_id": 507,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_dien_ban",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Duy Xuyên",
+    "district_id": 508,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duy_xuyen",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Quế Sơn",
+    "district_id": 509,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_que_son",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nam Giang",
+    "district_id": 510,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_giang",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phước Sơn",
+    "district_id": 511,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phuoc_son",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hiệp Đức",
+    "district_id": 512,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hiep_duc",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thăng Bình",
+    "district_id": 513,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thang_binh",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiên Phước",
+    "district_id": 514,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tien_phuoc",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Trà My",
+    "district_id": 515,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_tra_my",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nam Trà My",
+    "district_id": 516,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_tra_my",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Núi Thành",
+    "district_id": 517,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nui_thanh",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Ninh",
+    "district_id": 518,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_ninh",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nông Sơn",
+    "district_id": 519,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nong_son",
+    "province_id": 49,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Quảng Ngãi",
+    "district_id": 522,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_quang_ngai",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Sơn",
+    "district_id": 524,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_son",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trà Bồng",
+    "district_id": 525,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tra_bong",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sơn Tịnh",
+    "district_id": 527,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_son_tinh",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tư Nghĩa",
+    "district_id": 528,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tu_nghia",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sơn Hà",
+    "district_id": 529,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_son_ha",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sơn Tây",
+    "district_id": 530,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_son_tay",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Minh Long",
+    "district_id": 531,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_minh_long",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nghĩa Hành",
+    "district_id": 532,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nghia_hanh",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mộ Đức",
+    "district_id": 533,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mo_duc",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Đức Phổ",
+    "district_id": 534,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_duc_pho",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ba Tơ",
+    "district_id": 535,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ba_to",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lý Sơn",
+    "district_id": 536,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ly_son",
+    "province_id": 51,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Quy Nhơn",
+    "district_id": 540,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_quy_nhon",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện An Lão",
+    "district_id": 542,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_lao",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Hoài Nhơn",
+    "district_id": 543,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_hoai_nhon",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoài Ân",
+    "district_id": 544,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoai_an",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phù Mỹ",
+    "district_id": 545,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_my",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Thạnh",
+    "district_id": 546,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_thanh",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tây Sơn",
+    "district_id": 547,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tay_son",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phù Cát",
+    "district_id": 548,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_cat",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã An Nhơn",
+    "district_id": 549,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_an_nhon",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tuy Phước",
+    "district_id": 550,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuy_phuoc",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vân Canh",
+    "district_id": 551,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_canh",
+    "province_id": 52,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tuy Hoà",
+    "district_id": 555,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tuy_hoa",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Sông Cầu",
+    "district_id": 557,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_song_cau",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đồng Xuân",
+    "district_id": 558,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_xuan",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tuy An",
+    "district_id": 559,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuy_an",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sơn Hòa",
+    "district_id": 560,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_son_hoa",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sông Hinh",
+    "district_id": 561,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_song_hinh",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tây Hoà",
+    "district_id": 562,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tay_hoa",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Hoà",
+    "district_id": 563,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_hoa",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Đông Hòa",
+    "district_id": 564,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_dong_hoa",
+    "province_id": 54,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Nha Trang",
+    "district_id": 568,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_nha_trang",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Cam Ranh",
+    "district_id": 569,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_cam_ranh",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cam Lâm",
+    "district_id": 570,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_lam",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vạn Ninh",
+    "district_id": 571,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_van_ninh",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Ninh Hòa",
+    "district_id": 572,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_ninh_hoa",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Khánh Vĩnh",
+    "district_id": 573,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_khanh_vinh",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Diên Khánh",
+    "district_id": 574,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dien_khanh",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Khánh Sơn",
+    "district_id": 575,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_khanh_son",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trường Sa",
+    "district_id": 576,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_truong_sa",
+    "province_id": 56,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Phan Rang-Tháp Chàm",
+    "district_id": 582,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_phan_rang_thap_cham",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bác Ái",
+    "district_id": 584,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_ai",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ninh Sơn",
+    "district_id": 585,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ninh_son",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ninh Hải",
+    "district_id": 586,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ninh_hai",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ninh Phước",
+    "district_id": 587,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ninh_phuoc",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thuận Bắc",
+    "district_id": 588,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thuan_bac",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thuận Nam",
+    "district_id": 589,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thuan_nam",
+    "province_id": 58,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Phan Thiết",
+    "district_id": 593,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_phan_thiet",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã La Gi",
+    "district_id": 594,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_la_gi",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tuy Phong",
+    "district_id": 595,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuy_phong",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Bình",
+    "district_id": 596,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_binh",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hàm Thuận Bắc",
+    "district_id": 597,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ham_thuan_bac",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hàm Thuận Nam",
+    "district_id": 598,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ham_thuan_nam",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tánh Linh",
+    "district_id": 599,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tanh_linh",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đức Linh",
+    "district_id": 600,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duc_linh",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hàm Tân",
+    "district_id": 601,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ham_tan",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Quí",
+    "district_id": 602,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_qui",
+    "province_id": 60,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Kon Tum",
+    "district_id": 608,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_kon_tum",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đắk Glei",
+    "district_id": 610,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_glei",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ngọc Hồi",
+    "district_id": 611,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ngoc_hoi",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đắk Tô",
+    "district_id": 612,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_to",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kon Plông",
+    "district_id": 613,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kon_plong",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kon Rẫy",
+    "district_id": 614,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kon_ray",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đắk Hà",
+    "district_id": 615,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_ha",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Sa Thầy",
+    "district_id": 616,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_sa_thay",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tu Mơ Rông",
+    "district_id": 617,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tu_mo_rong",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ia H' Drai",
+    "district_id": 618,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ia_h_drai",
+    "province_id": 62,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Pleiku",
+    "district_id": 622,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_pleiku",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã An Khê",
+    "district_id": 623,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_an_khe",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Ayun Pa",
+    "district_id": 624,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_ayun_pa",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện KBang",
+    "district_id": 625,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kbang",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đăk Đoa",
+    "district_id": 626,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_doa",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chư Păh",
+    "district_id": 627,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chu_pah",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ia Grai",
+    "district_id": 628,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ia_grai",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mang Yang",
+    "district_id": 629,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mang_yang",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kông Chro",
+    "district_id": 630,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kong_chro",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đức Cơ",
+    "district_id": 631,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duc_co",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chư Prông",
+    "district_id": 632,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chu_prong",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chư Sê",
+    "district_id": 633,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chu_se",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đăk Pơ",
+    "district_id": 634,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_po",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ia Pa",
+    "district_id": 635,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ia_pa",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông Pa",
+    "district_id": 637,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_pa",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Thiện",
+    "district_id": 638,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_thien",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chư Pưh",
+    "district_id": 639,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chu_puh",
+    "province_id": 64,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Buôn Ma Thuột",
+    "district_id": 643,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_buon_ma_thuot",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Buôn Hồ",
+    "district_id": 644,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_buon_ho",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ea H'leo",
+    "district_id": 645,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ea_hleo",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ea Súp",
+    "district_id": 646,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ea_sup",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Buôn Đôn",
+    "district_id": 647,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_buon_don",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cư M'gar",
+    "district_id": 648,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cu_mgar",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông Búk",
+    "district_id": 649,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_buk",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông Năng",
+    "district_id": 650,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_nang",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ea Kar",
+    "district_id": 651,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ea_kar",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện M'Đrắk",
+    "district_id": 652,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mdrak",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông Bông",
+    "district_id": 653,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_bong",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông Pắc",
+    "district_id": 654,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_pac",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông A Na",
+    "district_id": 655,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_a_na",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lắk",
+    "district_id": 656,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lak",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cư Kuin",
+    "district_id": 657,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cu_kuin",
+    "province_id": 66,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Gia Nghĩa",
+    "district_id": 660,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_gia_nghia",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đăk Glong",
+    "district_id": 661,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_glong",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cư Jút",
+    "district_id": 662,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cu_jut",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đắk Mil",
+    "district_id": 663,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_mil",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Krông Nô",
+    "district_id": 664,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_krong_no",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đắk Song",
+    "district_id": 665,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_song",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đắk R'Lấp",
+    "district_id": 666,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dak_rlap",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tuy Đức",
+    "district_id": 667,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tuy_duc",
+    "province_id": 67,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Đà Lạt",
+    "district_id": 672,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_da_lat",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Bảo Lộc",
+    "district_id": 673,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_bao_loc",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đam Rông",
+    "district_id": 674,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dam_rong",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lạc Dương",
+    "district_id": 675,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lac_duong",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lâm Hà",
+    "district_id": 676,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lam_ha",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đơn Dương",
+    "district_id": 677,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_don_duong",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đức Trọng",
+    "district_id": 678,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duc_trong",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Di Linh",
+    "district_id": 679,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_di_linh",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bảo Lâm",
+    "district_id": 680,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bao_lam",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đạ Huoai",
+    "district_id": 681,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_da_huoai",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đạ Tẻh",
+    "district_id": 682,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_da_teh",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cát Tiên",
+    "district_id": 683,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cat_tien",
+    "province_id": 68,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Phước Long",
+    "district_id": 688,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_phuoc_long",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Đồng Xoài",
+    "district_id": 689,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_dong_xoai",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Bình Long",
+    "district_id": 690,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_binh_long",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bù Gia Mập",
+    "district_id": 691,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bu_gia_map",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lộc Ninh",
+    "district_id": 692,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_loc_ninh",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bù Đốp",
+    "district_id": 693,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bu_dop",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hớn Quản",
+    "district_id": 694,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hon_quan",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đồng Phú",
+    "district_id": 695,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_phu",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bù Đăng",
+    "district_id": 696,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bu_dang",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Chơn Thành",
+    "district_id": 697,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_chon_thanh",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Riềng",
+    "district_id": 698,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_rieng",
+    "province_id": 70,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tây Ninh",
+    "district_id": 703,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tay_ninh",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Biên",
+    "district_id": 705,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_bien",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Châu",
+    "district_id": 706,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_chau",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Dương Minh Châu",
+    "district_id": 707,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duong_minh_chau",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 708,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Hòa Thành",
+    "district_id": 709,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_hoa_thanh",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gò Dầu",
+    "district_id": 710,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_go_dau",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bến Cầu",
+    "district_id": 711,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ben_cau",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Trảng Bàng",
+    "district_id": 712,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_trang_bang",
+    "province_id": 72,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Thủ Dầu Một",
+    "district_id": 718,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_thu_dau_mot",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bàu Bàng",
+    "district_id": 719,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bau_bang",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Dầu Tiếng",
+    "district_id": 720,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dau_tieng",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Bến Cát",
+    "district_id": 721,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_ben_cat",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Giáo",
+    "district_id": 722,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_giao",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tân Uyên",
+    "district_id": 723,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tan_uyen",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Dĩ An",
+    "district_id": 724,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_di_an",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Thuận An",
+    "district_id": 725,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_thuan_an",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bắc Tân Uyên",
+    "district_id": 726,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_bac_tan_uyen",
+    "province_id": 74,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Biên Hòa",
+    "district_id": 731,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_bien_hoa",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Long Khánh",
+    "district_id": 732,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_long_khanh",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Phú",
+    "district_id": 734,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_phu",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Cửu",
+    "district_id": 735,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_cuu",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Định Quán",
+    "district_id": 736,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dinh_quan",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trảng Bom",
+    "district_id": 737,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_trang_bom",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thống Nhất",
+    "district_id": 738,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thong_nhat",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cẩm Mỹ",
+    "district_id": 739,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cam_my",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Long Thành",
+    "district_id": 740,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_long_thanh",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Xuân Lộc",
+    "district_id": 741,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_xuan_loc",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nhơn Trạch",
+    "district_id": 742,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nhon_trach",
+    "province_id": 75,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Vũng Tàu",
+    "district_id": 747,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_vung_tau",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Bà Rịa",
+    "district_id": 748,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ba_ria",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Đức",
+    "district_id": 750,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_duc",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Xuyên Mộc",
+    "district_id": 751,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_xuyen_moc",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Long Điền",
+    "district_id": 752,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_long_dien",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đất Đỏ",
+    "district_id": 753,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dat_do",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Phú Mỹ",
+    "district_id": 754,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_phu_my",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Côn Đảo",
+    "district_id": 755,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_con_dao",
+    "province_id": 77,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 1",
+    "district_id": 760,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_1",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 12",
+    "district_id": 761,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_12",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Gò Vấp",
+    "district_id": 764,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_go_vap",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Bình Thạnh",
+    "district_id": 765,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_binh_thanh",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Tân Bình",
+    "district_id": 766,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_tan_binh",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Tân Phú",
+    "district_id": 767,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_tan_phu",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Phú Nhuận",
+    "district_id": 768,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_phu_nhuan",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Thủ Đức",
+    "district_id": 769,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_thu_duc",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 3",
+    "district_id": 770,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_3",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 10",
+    "district_id": 771,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_10",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 11",
+    "district_id": 772,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_11",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 4",
+    "district_id": 773,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_4",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 5",
+    "district_id": 774,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_5",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 6",
+    "district_id": 775,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_6",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 8",
+    "district_id": 776,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_8",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Bình Tân",
+    "district_id": 777,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_binh_tan",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Quận 7",
+    "district_id": 778,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_7",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Củ Chi",
+    "district_id": 783,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cu_chi",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hóc Môn",
+    "district_id": 784,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoc_mon",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Chánh",
+    "district_id": 785,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_chanh",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Nhà Bè",
+    "district_id": 786,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nha_be",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cần Giờ",
+    "district_id": 787,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_can_gio",
+    "province_id": 79,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Tân An",
+    "district_id": 794,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tan_an",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Kiến Tường",
+    "district_id": 795,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_kien_tuong",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Hưng",
+    "district_id": 796,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_hung",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Hưng",
+    "district_id": 797,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_hung",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mộc Hóa",
+    "district_id": 798,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_moc_hoa",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Thạnh",
+    "district_id": 799,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_thanh",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạnh Hóa",
+    "district_id": 800,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_hoa",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đức Huệ",
+    "district_id": 801,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duc_hue",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đức Hòa",
+    "district_id": 802,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duc_hoa",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bến Lức",
+    "district_id": 803,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ben_luc",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thủ Thừa",
+    "district_id": 804,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thu_thua",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Trụ",
+    "district_id": 805,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_tru",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cần Đước",
+    "district_id": 806,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_can_duoc",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cần Giuộc",
+    "district_id": 807,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_can_giuoc",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 808,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 80,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Mỹ Tho",
+    "district_id": 815,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_my_tho",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Gò Công",
+    "district_id": 816,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_go_cong",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Cai Lậy",
+    "district_id": 817,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_cai_lay",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Phước",
+    "district_id": 818,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_phuoc",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cái Bè",
+    "district_id": 819,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cai_be",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cai Lậy",
+    "district_id": 820,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cai_lay",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 821,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chợ Gạo",
+    "district_id": 822,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cho_gao",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gò Công Tây",
+    "district_id": 823,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_go_cong_tay",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gò Công Đông",
+    "district_id": 824,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_go_cong_dong",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Phú Đông",
+    "district_id": 825,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_phu_dong",
+    "province_id": 82,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Bến Tre",
+    "district_id": 829,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ben_tre",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 831,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chợ Lách",
+    "district_id": 832,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cho_lach",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mỏ Cày Nam",
+    "district_id": 833,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mo_cay_nam",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Giồng Trôm",
+    "district_id": 834,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_giong_trom",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Đại",
+    "district_id": 835,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_dai",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ba Tri",
+    "district_id": 836,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ba_tri",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạnh Phú",
+    "district_id": 837,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_phu",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mỏ Cày Bắc",
+    "district_id": 838,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mo_cay_bac",
+    "province_id": 83,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Trà Vinh",
+    "district_id": 842,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_tra_vinh",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Càng Long",
+    "district_id": 844,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cang_long",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cầu Kè",
+    "district_id": 845,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cau_ke",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tiểu Cần",
+    "district_id": 846,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tieu_can",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 847,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cầu Ngang",
+    "district_id": 848,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cau_ngang",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trà Cú",
+    "district_id": 849,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tra_cu",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Duyên Hải",
+    "district_id": 850,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_duyen_hai",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Duyên Hải",
+    "district_id": 851,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_duyen_hai",
+    "province_id": 84,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Vĩnh Long",
+    "district_id": 855,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_vinh_long",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Long Hồ",
+    "district_id": 857,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_long_ho",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mang Thít",
+    "district_id": 858,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_mang_thit",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vũng Liêm",
+    "district_id": 859,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vung_liem",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tam Bình",
+    "district_id": 860,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tam_binh",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Bình Minh",
+    "district_id": 861,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_binh_minh",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trà Ôn",
+    "district_id": 862,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tra_on",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Bình Tân",
+    "district_id": 863,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_binh_tan",
+    "province_id": 86,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Cao Lãnh",
+    "district_id": 866,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_cao_lanh",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Sa Đéc",
+    "district_id": 867,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_sa_dec",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hồng Ngự",
+    "district_id": 868,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_hong_ngu",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Hồng",
+    "district_id": 869,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_hong",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hồng Ngự",
+    "district_id": 870,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hong_ngu",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tam Nông",
+    "district_id": 871,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tam_nong",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tháp Mười",
+    "district_id": 872,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thap_muoi",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cao Lãnh",
+    "district_id": 873,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cao_lanh",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thanh Bình",
+    "district_id": 874,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_binh",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lấp Vò",
+    "district_id": 875,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lap_vo",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Lai Vung",
+    "district_id": 876,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_lai_vung",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 877,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 87,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Long Xuyên",
+    "district_id": 883,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_long_xuyen",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Châu Đốc",
+    "district_id": 884,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_chau_doc",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện An Phú",
+    "district_id": 886,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_phu",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Tân Châu",
+    "district_id": 887,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_tan_chau",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Tân",
+    "district_id": 888,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_tan",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Phú",
+    "district_id": 889,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_phu",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Tịnh Biên",
+    "district_id": 890,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_tinh_bien",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tri Tôn",
+    "district_id": 891,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tri_ton",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 892,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Chợ Mới",
+    "district_id": 893,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cho_moi",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thoại Sơn",
+    "district_id": 894,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thoai_son",
+    "province_id": 89,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Rạch Giá",
+    "district_id": 899,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_rach_gia",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Hà Tiên",
+    "district_id": 900,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ha_tien",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kiên Lương",
+    "district_id": 902,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kien_luong",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hòn Đất",
+    "district_id": 903,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hon_dat",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Tân Hiệp",
+    "district_id": 904,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tan_hiep",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 905,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Giồng Riềng",
+    "district_id": 906,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_giong_rieng",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Gò Quao",
+    "district_id": 907,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_go_quao",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện An Biên",
+    "district_id": 908,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_bien",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện An Minh",
+    "district_id": 909,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_an_minh",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Thuận",
+    "district_id": 910,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_thuan",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Phú Quốc",
+    "district_id": 911,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_phu_quoc",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kiên Hải",
+    "district_id": 912,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_kien_hai",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện U Minh Thượng",
+    "district_id": 913,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_u_minh_thuong",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Giang Thành",
+    "district_id": 914,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_giang_thanh",
+    "province_id": 91,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Ninh Kiều",
+    "district_id": 916,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_ninh_kieu",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Ô Môn",
+    "district_id": 917,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_o_mon",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Bình Thuỷ",
+    "district_id": 918,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_binh_thuy",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Cái Răng",
+    "district_id": 919,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_cai_rang",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Quận Thốt Nốt",
+    "district_id": 923,
+    "division_type": "quận",
+    "district_iddistrict_name": "quan_thot_not",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Thạnh",
+    "district_id": 924,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_thanh",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cờ Đỏ",
+    "district_id": 925,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_co_do",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phong Điền",
+    "district_id": 926,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phong_dien",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thới Lai",
+    "district_id": 927,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thoi_lai",
+    "province_id": 92,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Vị Thanh",
+    "district_id": 930,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_vi_thanh",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Ngã Bảy",
+    "district_id": 931,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_nga_bay",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành A",
+    "district_id": 932,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh_a",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 933,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phụng Hiệp",
+    "district_id": 934,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phung_hiep",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vị Thuỷ",
+    "district_id": 935,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vi_thuy",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Long Mỹ",
+    "district_id": 936,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_long_my",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Long Mỹ",
+    "district_id": 937,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_long_my",
+    "province_id": 93,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Sóc Trăng",
+    "district_id": 941,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_soc_trang",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Châu Thành",
+    "district_id": 942,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_chau_thanh",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Kế Sách",
+    "district_id": 943,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ke_sach",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mỹ Tú",
+    "district_id": 944,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_my_tu",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cù Lao Dung",
+    "district_id": 945,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cu_lao_dung",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Long Phú",
+    "district_id": 946,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_long_phu",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Mỹ Xuyên",
+    "district_id": 947,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_my_xuyen",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Ngã Năm",
+    "district_id": 948,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_nga_nam",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thạnh Trị",
+    "district_id": 949,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thanh_tri",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Vĩnh Châu",
+    "district_id": 950,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_vinh_chau",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trần Đề",
+    "district_id": 951,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tran_de",
+    "province_id": 94,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Bạc Liêu",
+    "district_id": 954,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_bac_lieu",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hồng Dân",
+    "district_id": 956,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hong_dan",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phước Long",
+    "district_id": 957,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phuoc_long",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Vĩnh Lợi",
+    "district_id": 958,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_vinh_loi",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Thị xã Giá Rai",
+    "district_id": 959,
+    "division_type": "thị xã",
+    "district_iddistrict_name": "thi_xa_gia_rai",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đông Hải",
+    "district_id": 960,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dong_hai",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Hoà Bình",
+    "district_id": 961,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_hoa_binh",
+    "province_id": 95,
+    "wards": []
+  },
+  {
+    "district_name": "Thành phố Cà Mau",
+    "district_id": 964,
+    "division_type": "thành phố",
+    "district_iddistrict_name": "thanh_pho_ca_mau",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện U Minh",
+    "district_id": 966,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_u_minh",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Thới Bình",
+    "district_id": 967,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_thoi_binh",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Trần Văn Thời",
+    "district_id": 968,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_tran_van_thoi",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Cái Nước",
+    "district_id": 969,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_cai_nuoc",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Đầm Dơi",
+    "district_id": 970,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_dam_doi",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Năm Căn",
+    "district_id": 971,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_nam_can",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Phú Tân",
+    "district_id": 972,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_phu_tan",
+    "province_id": 96,
+    "wards": []
+  },
+  {
+    "district_name": "Huyện Ngọc Hiển",
+    "district_id": 973,
+    "division_type": "huyện",
+    "district_iddistrict_name": "huyen_ngoc_hien",
+    "province_id": 96,
+    "wards": []
+  }
+]

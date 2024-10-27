@@ -37,6 +37,9 @@
 
     <string name="upload_image">Upload Image</string>
 
+    <string name="update">Update</string>
+    <string name="update_success">Update profile successfully !</string>
+
     <string name="login_no_account_question">Don\'t have an account?</string>
     <string name="retry">Retry</string>
     <string name="ok">OK</string>
