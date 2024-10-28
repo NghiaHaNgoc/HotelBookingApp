@@ -86,6 +86,9 @@
     <string name="bank">Bank</string>
     <string name="warning">Warning</string>
     <string name="account_number">Account number</string>
+    <string name="confirm">Confirm</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="contact_us">Contact us</string>
 
     <string name="require_input_message">This field is required!</string>
     <string name="exceed_capacity_limit_message">Exceed capacity limit!</string>
@@ -94,6 +97,13 @@
     <string name="out_of_room_title">Out of room!</string>
     <string name="out_of_room_message">Please select others time or select other type room.</string>
     <string name="warning_payment_message">Please do not change the transfer amount and transfer content while making the transfer transaction.</string>
+    <string name="cancel_reservation_alert_title">Are you sure you want to cancel it?</string>
+    <string name="cancel_waiting_reservation_alert_message">This action cannot be undo.</string>
+    <string name="cancel_open_reservation_alert_message">You have paid for this reservation.</string>
+    <string name="cancel_in_progress_reservation_alert_message">You have paid for this reservation and it is in use. If you cancel, we will not refund the amount you have paid.</string>
+    <string name="cancel_reservation_success_title">Cancel reservation successful!</string>
+    <string name="cancel_open_reservation_success_message">Please contact us to get your deposit refunded.</string>
+
 
     <string name="app_name">Hotel-Booking-App</string>
     <string name="booking_history">Booking history</string>
