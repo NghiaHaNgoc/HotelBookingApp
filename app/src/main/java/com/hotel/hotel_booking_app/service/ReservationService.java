@@ -19,6 +19,9 @@ public interface ReservationService {
     @GET("customer/reservation/list")
     Call<ApiResponse<List<Reservation>>> listReservation(@Header("Authorization") String authorization);
 
+    @GET("customer/reservation/{id}")
+    Call<ApiResponse<Reservation>> getReservation(@Header("Authorization") String authorization, @Path("id") int reservationId);
+
     @POST("customer/reservation/{id}/cancel")
     Call<ApiResponse<Reservation>> cancelReservation(@Header("Authorization") String authorization, @Path("id") int reservationId);
 }

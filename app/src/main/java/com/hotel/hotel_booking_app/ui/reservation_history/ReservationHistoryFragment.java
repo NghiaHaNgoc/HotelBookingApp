@@ -80,7 +80,7 @@ public class ReservationHistoryFragment extends Fragment {
                                 response.body().result);
                 adapter.setOnClickListener(item -> {
                     Bundle bundle = new Bundle();
-                    bundle.putString("reservation", new Gson().toJson(item));
+                    bundle.putInt("reservation_id", item.id);
                     NavController navController = Navigation.findNavController(getView());
                     navController.navigate(R.id.nav_reservation_history_detail, bundle);
                 });

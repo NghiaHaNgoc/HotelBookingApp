@@ -64,6 +64,10 @@ public class ApiService {
         return service.listReservation(getAuthorization());
     }
 
+    public Call<ApiResponse<Reservation>> getReservation(int id) {
+        return service.getReservation(getAuthorization(), id);
+    }
+
     public Call<ApiResponse<Reservation>> cancelReservation(int id) {
         return service.cancelReservation(getAuthorization(), id);
     }
