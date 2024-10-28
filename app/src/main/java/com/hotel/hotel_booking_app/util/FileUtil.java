@@ -1,5 +1,6 @@
 package com.hotel.hotel_booking_app.util;
 
+import android.content.Context;
 import android.net.Uri;
 
 import java.io.ByteArrayOutputStream;
@@ -22,5 +23,21 @@ public class FileUtil {
         }
 //        return byteBuffer.toByteArray();
         return Base64.encodeToString(outputStream.toByteArray(), Base64.DEFAULT);
+    }
+
+    public static String parseJSON(Context context, int rawResourceId) {
+        String json = null;
+
+        try {
+            InputStream is = context.getResources().openRawResource(rawResourceId);
+            int size = is.available();
+            byte[] buffer = new byte[size];
+            is.read(buffer);
+            is.close();
+            json = new String(buffer, "UTF-8");
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        return json;
     }
 }

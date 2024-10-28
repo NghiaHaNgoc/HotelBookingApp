@@ -1,0 +1,506 @@
+[
+  {
+    "province_name": "Thành phố Hà Nội",
+    "province_id": 1,
+    "division_type": "thành phố trung ương",
+    "province_idprovince_name": "thanh_pho_ha_noi",
+    "phone_province_id": 24,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hà Giang",
+    "province_id": 2,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ha_giang",
+    "phone_province_id": 219,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Cao Bằng",
+    "province_id": 4,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_cao_bang",
+    "phone_province_id": 206,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bắc Kạn",
+    "province_id": 6,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_bac_kan",
+    "phone_province_id": 209,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Tuyên Quang",
+    "province_id": 8,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_tuyen_quang",
+    "phone_province_id": 207,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Lào Cai",
+    "province_id": 10,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_lao_cai",
+    "phone_province_id": 214,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Điện Biên",
+    "province_id": 11,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_dien_bien",
+    "phone_province_id": 215,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Lai Châu",
+    "province_id": 12,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_lai_chau",
+    "phone_province_id": 213,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Sơn La",
+    "province_id": 14,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_son_la",
+    "phone_province_id": 212,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Yên Bái",
+    "province_id": 15,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_yen_bai",
+    "phone_province_id": 216,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hoà Bình",
+    "province_id": 17,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_hoa_binh",
+    "phone_province_id": 218,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Thái Nguyên",
+    "province_id": 19,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_thai_nguyen",
+    "phone_province_id": 208,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Lạng Sơn",
+    "province_id": 20,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_lang_son",
+    "phone_province_id": 205,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Quảng Ninh",
+    "province_id": 22,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_quang_ninh",
+    "phone_province_id": 203,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bắc Giang",
+    "province_id": 24,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_bac_giang",
+    "phone_province_id": 204,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Phú Thọ",
+    "province_id": 25,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_phu_tho",
+    "phone_province_id": 210,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Vĩnh Phúc",
+    "province_id": 26,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_vinh_phuc",
+    "phone_province_id": 211,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bắc Ninh",
+    "province_id": 27,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_bac_ninh",
+    "phone_province_id": 222,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hải Dương",
+    "province_id": 30,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_hai_duong",
+    "phone_province_id": 220,
+    "districts": []
+  },
+  {
+    "province_name": "Thành phố Hải Phòng",
+    "province_id": 31,
+    "division_type": "thành phố trung ương",
+    "province_idprovince_name": "thanh_pho_hai_phong",
+    "phone_province_id": 225,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hưng Yên",
+    "province_id": 33,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_hung_yen",
+    "phone_province_id": 221,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Thái Bình",
+    "province_id": 34,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_thai_binh",
+    "phone_province_id": 227,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hà Nam",
+    "province_id": 35,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ha_nam",
+    "phone_province_id": 226,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Nam Định",
+    "province_id": 36,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_nam_dinh",
+    "phone_province_id": 228,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Ninh Bình",
+    "province_id": 37,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ninh_binh",
+    "phone_province_id": 229,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Thanh Hóa",
+    "province_id": 38,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_thanh_hoa",
+    "phone_province_id": 237,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Nghệ An",
+    "province_id": 40,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_nghe_an",
+    "phone_province_id": 238,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hà Tĩnh",
+    "province_id": 42,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ha_tinh",
+    "phone_province_id": 239,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Quảng Bình",
+    "province_id": 44,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_quang_binh",
+    "phone_province_id": 232,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Quảng Trị",
+    "province_id": 45,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_quang_tri",
+    "phone_province_id": 233,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Thừa Thiên Huế",
+    "province_id": 46,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_thua_thien_hue",
+    "phone_province_id": 234,
+    "districts": []
+  },
+  {
+    "province_name": "Thành phố Đà Nẵng",
+    "province_id": 48,
+    "division_type": "thành phố trung ương",
+    "province_idprovince_name": "thanh_pho_da_nang",
+    "phone_province_id": 236,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Quảng Nam",
+    "province_id": 49,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_quang_nam",
+    "phone_province_id": 235,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Quảng Ngãi",
+    "province_id": 51,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_quang_ngai",
+    "phone_province_id": 255,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bình Định",
+    "province_id": 52,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_binh_dinh",
+    "phone_province_id": 256,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Phú Yên",
+    "province_id": 54,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_phu_yen",
+    "phone_province_id": 257,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Khánh Hòa",
+    "province_id": 56,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_khanh_hoa",
+    "phone_province_id": 258,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Ninh Thuận",
+    "province_id": 58,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ninh_thuan",
+    "phone_province_id": 259,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bình Thuận",
+    "province_id": 60,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_binh_thuan",
+    "phone_province_id": 252,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Kon Tum",
+    "province_id": 62,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_kon_tum",
+    "phone_province_id": 260,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Gia Lai",
+    "province_id": 64,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_gia_lai",
+    "phone_province_id": 269,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Đắk Lắk",
+    "province_id": 66,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_dak_lak",
+    "phone_province_id": 262,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Đắk Nông",
+    "province_id": 67,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_dak_nong",
+    "phone_province_id": 261,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Lâm Đồng",
+    "province_id": 68,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_lam_dong",
+    "phone_province_id": 263,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bình Phước",
+    "province_id": 70,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_binh_phuoc",
+    "phone_province_id": 271,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Tây Ninh",
+    "province_id": 72,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_tay_ninh",
+    "phone_province_id": 276,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bình Dương",
+    "province_id": 74,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_binh_duong",
+    "phone_province_id": 274,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Đồng Nai",
+    "province_id": 75,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_dong_nai",
+    "phone_province_id": 251,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bà Rịa - Vũng Tàu",
+    "province_id": 77,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ba_ria_vung_tau",
+    "phone_province_id": 254,
+    "districts": []
+  },
+  {
+    "province_name": "Thành phố Hồ Chí Minh",
+    "province_id": 79,
+    "division_type": "thành phố trung ương",
+    "province_idprovince_name": "thanh_pho_ho_chi_minh",
+    "phone_province_id": 28,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Long An",
+    "province_id": 80,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_long_an",
+    "phone_province_id": 272,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Tiền Giang",
+    "province_id": 82,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_tien_giang",
+    "phone_province_id": 273,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bến Tre",
+    "province_id": 83,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ben_tre",
+    "phone_province_id": 275,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Trà Vinh",
+    "province_id": 84,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_tra_vinh",
+    "phone_province_id": 294,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Vĩnh Long",
+    "province_id": 86,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_vinh_long",
+    "phone_province_id": 270,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Đồng Tháp",
+    "province_id": 87,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_dong_thap",
+    "phone_province_id": 277,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh An Giang",
+    "province_id": 89,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_an_giang",
+    "phone_province_id": 296,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Kiên Giang",
+    "province_id": 91,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_kien_giang",
+    "phone_province_id": 297,
+    "districts": []
+  },
+  {
+    "province_name": "Thành phố Cần Thơ",
+    "province_id": 92,
+    "division_type": "thành phố trung ương",
+    "province_idprovince_name": "thanh_pho_can_tho",
+    "phone_province_id": 292,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Hậu Giang",
+    "province_id": 93,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_hau_giang",
+    "phone_province_id": 293,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Sóc Trăng",
+    "province_id": 94,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_soc_trang",
+    "phone_province_id": 299,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Bạc Liêu",
+    "province_id": 95,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_bac_lieu",
+    "phone_province_id": 291,
+    "districts": []
+  },
+  {
+    "province_name": "Tỉnh Cà Mau",
+    "province_id": 96,
+    "division_type": "tỉnh",
+    "province_idprovince_name": "tinh_ca_mau",
+    "phone_province_id": 290,
+    "districts": []
+  }
+]
