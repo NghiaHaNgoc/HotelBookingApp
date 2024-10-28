@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.activity:activity:1.6.0" )
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
