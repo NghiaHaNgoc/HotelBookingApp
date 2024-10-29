@@ -183,4 +183,14 @@ public class User {
             this.password = password;
         }
     }
+
+    public static class FormChangePassword {
+        public String oldPassword;
+        public String newPassword;
+
+        public FormChangePassword(String oldPassword, String newPassword) {
+            this.oldPassword = oldPassword;
+            this.newPassword = newPassword;
+        }
+    }
 }
