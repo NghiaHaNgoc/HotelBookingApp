@@ -6,7 +6,6 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hotel.hotel_booking_app.R;
-import com.hotel.hotel_booking_app.model.Address;
 import com.hotel.hotel_booking_app.model.ApiResponse;
 import com.hotel.hotel_booking_app.model.Reservation;
 import com.hotel.hotel_booking_app.model.TypeRoom;
@@ -49,6 +48,10 @@ public class ApiService {
 
     public Call<ApiResponse<User>> updateProfile(User input) {
         return service.updateProfile(getAuthorization(), input);
+    }
+
+    public Call<ApiResponse<User.FormChangePassword>> changePassword(User.FormChangePassword input) {
+        return service.changePassword(getAuthorization(), input);
     }
 
     public Call<ApiResponse<ArrayList<TypeRoom>>> getListTypeRoom() {

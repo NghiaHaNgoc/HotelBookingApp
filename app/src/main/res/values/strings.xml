@@ -20,7 +20,9 @@
     <string name="account">Account</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
+    <string name="login_no_account_question">Don\'t have an account?</string>
 
+    // update profile
     <string name="email">Email</string>
     <string name="phone">Phone</string>
     <string name="birthdate">Birthdate</string>
@@ -40,7 +42,18 @@
     <string name="update">Update</string>
     <string name="update_success">Update profile successfully !</string>
 
-    <string name="login_no_account_question">Don\'t have an account?</string>
+    // change password
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="old_password_required">Old password is required !</string>
+    <string name="new_password_required">New password is required !</string>
+    <string name="change_password_success">Change password successfully !</string>
+    <string name="change_password_failed">Change password failed !</string>
+    <string name="min_length_password">Password must be at least 6 characters !</string>
+    <string name="match_confirm_password">Confirm password must match new password !</string>
+    <string name="wrong_old_password">Wrong old password !</string>
+
     <string name="retry">Retry</string>
     <string name="ok">OK</string>
     <string name="sign_in_failed_alert_title">Sign in failed!</string>
