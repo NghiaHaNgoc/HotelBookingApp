@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.databinding.FragmentReservationHistoryItemBinding;
 import com.hotel.hotel_booking_app.model.Reservation;
+import com.hotel.hotel_booking_app.util.LanguageUtil;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -55,7 +56,17 @@ public class ReservationHistoryItemRecyclerViewAdapter extends RecyclerView.Adap
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Reservation reservation = reservationList.get(position);
-        holder.typeRoom.setText(reservation.room.typeRoom.title);
+        // Set title
+        switch (LanguageUtil.getLanguage()) {
+            case LanguageUtil.VIETNAMESE:
+                holder.typeRoom.setText(reservation.room.typeRoom.title);
+                break;
+            case LanguageUtil.JAPANESE:
+                holder.typeRoom.setText(reservation.room.typeRoom.titleJa);
+                break;
+            default:
+                holder.typeRoom.setText(reservation.room.typeRoom.titleEn);
+        }
 
         // Room
         String roomStr = context.getResources().getString(R.string.room) + ": ";

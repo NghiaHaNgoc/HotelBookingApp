@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_endpoint">https://hotel-management-server.fly.dev/</string>
+    <string name="api_address_vietnam">https://provinces.open-api.vn/api/</string>
+
+    <string name="sign_in_dialog_retry">Thử lại</string>
+    <string name="sign_in_dialog_register">Đăng ký</string>
+
+    <string name="success">Thành công</string>
+    <string name="reservation_success">Đặt phòng thành công</string>
+    <string name="price">Giá</string>
+    <string name="type_room">Loại phòng</string>
+    <string name="type_room_detail">Chi tiết loại phòng</string>
+    <string name="view_direction">Hướng nhìn</string>
+    <string name="view_direction_river">Sông</string>
+    <string name="view_direction_city">Thành phố</string>
+    <string name="preferential_services">Dịch vụ ưu đãi</string>
+    <string name="size">Kích thước</string>
+    <string name="adult_capacity">Số người lớn</string>
+    <string name="kid_capacity">Số trẻ em</string>
+    <string name="amenities">Tiện nghi</string>
+    <string name="account">Tài khoản</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+
+    <string name="email">Email</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="birthdate">Ngày sinh</string>
+    <string name="gender">Giới tính</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="firstname">Họ tên đệm</string>
+    <string name="surname">Tên</string>
+    <string name="password">Mật khẩu</string>
+    <string name="province">Tỉnh/Thành phố</string>
+    <string name="district">Quận/Huyện</string>
+    <string name="ward">Phường/Xã</string>
+    <string name="address">Địa chỉ</string>
+
+    <string name="upload_image">Tải ảnh lên</string>
+    <string name="update">Cập nhật</string>
+    <string name="update_success">Cập nhật hồ sơ thành công!</string>
+
+    <string name="login_no_account_question">Chưa có tài khoản?</string>
+    <string name="retry">Thử lại</string>
+    <string name="ok">Xác nhận</string>
+    <string name="sign_in_failed_alert_title">Đăng nhập thất bại!</string>
+    <string name="sign_up_failed_alert_title">Đăng ký thất bại!</string>
+    <string name="sign_in_failed_alert_message">Email hoặc mật khẩu không hợp lệ. Vui lòng thử lại hoặc đăng ký tài khoản mới.</string>
+    <string name="sign_up_failed_alert_message">Email này đã được sử dụng!</string>
+    <string name="sign_in_success_message">Đăng nhập thành công!</string>
+    <string name="sign_up_success_message">Đăng ký thành công!</string>
+    <string name="sign_out_success_message">Đăng xuất thành công!</string>
+    <string name="sign_up_have_account_question">Đã có tài khoản?</string>
+
+    <string name="profile">Hồ sơ</string>
+    <string name="reservation">Đặt phòng</string>
+    <string name="reserve">Đặt</string>
+
+    <string name="datetime_from">Ngày giờ bắt đầu</string>
+    <string name="date_from">Ngày bắt đầu</string>
+    <string name="time_from">Giờ bắt đầu</string>
+    <string name="datetime_to">Ngày giờ kết thúc</string>
+    <string name="date_to">Ngày kết thúc</string>
+    <string name="time_to">Giờ kết thúc</string>
+    <string name="number_people">Số người</string>
+    <string name="adult_number">Số người lớn</string>
+    <string name="kid_number">Số trẻ em</string>
+    <string name="total_price">Tổng giá</string>
+    <string name="reservation_id">Mã đặt phòng</string>
+    <string name="reservation_history">Lịch sử đặt phòng</string>
+    <string name="reservation_history_detail">Chi tiết lịch sử đặt phòng</string>
+    <string name="created_at">Ngày tạo</string>
+    <string name="room">Phòng</string>
+    <string name="room_number">Số phòng</string>
+    <string name="floor">Tầng</string>
+    <string name="status">Trạng thái</string>
+    <string name="status_waiting">Chờ xác nhận</string>
+    <string name="status_open">Mở</string>
+    <string name="status_in_progress">Đang sử dụng</string>
+    <string name="status_end">Kết thúc</string>
+    <string name="status_cancel">Hủy</string>
+    <string name="check_in_at">Nhận phòng lúc</string>
+    <string name="checkout_at">Trả phòng lúc</string>
+    <string name="updated_at">Ngày cập nhật</string>
+    <string name="name">Tên</string>
+    <string name="payment">Thanh toán</string>
+    <string name="edit">Sửa</string>
+    <string name="bank">Ngân hàng</string>
+    <string name="warning">Cảnh báo</string>
+    <string name="account_number">Số tài khoản</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="dismiss">Bỏ qua</string>
+    <string name="contact_us">Liên hệ chúng tôi</string>
+
+    <string name="require_input_message">Trường này bắt buộc!</string>
+    <string name="exceed_capacity_limit_message">Vượt quá giới hạn số người!</string>
+    <string name="invalid_input">Dữ liệu không hợp lệ!</string>
+    <string name="datetime_from_must_less_than_to_message">Ngày giờ bắt đầu phải nhỏ hơn ngày giờ kết thúc!</string>
+    <string name="out_of_room_title">Hết phòng!</string>
+    <string name="out_of_room_message">Vui lòng chọn thời gian khác hoặc chọn loại phòng khác.</string>
+    <string name="warning_payment_message">Vui lòng không thay đổi số tiền chuyển khoản và nội dung chuyển khoản trong quá trình chuyển khoản.</string>
+    <string name="cancel_reservation_alert_title">Bạn có chắc chắn muốn hủy?</string>
+    <string name="cancel_waiting_reservation_alert_message">Hành động này không thể hoàn tác.</string>
+    <string name="cancel_open_reservation_alert_message">Bạn đã thanh toán cho đặt phòng này.</string>
+    <string name="cancel_in_progress_reservation_alert_message">Bạn đã thanh toán cho đặt phòng này và đang được sử dụng. Nếu hủy, chúng tôi sẽ không hoàn trả số tiền bạn đã thanh toán.</string>
+    <string name="cancel_reservation_success_title">Hủy đặt phòng thành công!</string>
+    <string name="cancel_open_reservation_success_message">Vui lòng liên hệ chúng tôi để được hoàn tiền đặt cọc.</string>
+
+    <string name="app_name">Ứng dụng Đặt Phòng Khách Sạn</string>
+    <string name="booking_history">Lịch sử đặt phòng</string>
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="back_to_home_page">Trở về trang chủ</string>
+    <string name="navigation_drawer_open">Mở menu</string>
+    <string name="navigation_drawer_close">Đóng menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Tiêu đề menu</string>
+    <string name="action_settings">Cài đặt</string>
+
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_gallery">Thư viện ảnh</string>
+    <string name="menu_slideshow">Trình chiếu</string>
+    <string name="hello_blank_fragment">Xin chào, fragment trống</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="system_language">Ngôn ngữ hệ thống</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="about_us">Về chúng tôi</string>
+</resources>

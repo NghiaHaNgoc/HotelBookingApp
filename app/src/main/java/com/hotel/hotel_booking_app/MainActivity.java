@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -17,6 +18,8 @@ import com.bumptech.glide.request.RequestOptions;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.os.LocaleListCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     public NavController navController;
+    public SharedPreferences settingSharedPreferences;
+    SharedPreferences accountSharedPreferences;
     SharedPreferences.OnSharedPreferenceChangeListener accountPreferencesListener;
 
     @Override
@@ -68,33 +73,38 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        SharedPreferences accountSharedPreferences = getSharedPreferences("account", MODE_PRIVATE);
-        handleSignIn(accountSharedPreferences);
+        // Share preferences
+        accountSharedPreferences = getSharedPreferences("account", MODE_PRIVATE);
+        settingSharedPreferences = getSharedPreferences("setting", MODE_PRIVATE);
+        settingSharedPreferences.edit().putString("language", "en").apply();
+
+        handleSignIn();
 
         accountPreferencesListener = (sharedPreferences, s) -> {
-            handleSignIn(sharedPreferences);
+            handleSignIn();
         };
         accountSharedPreferences.registerOnSharedPreferenceChangeListener(accountPreferencesListener);
-//        Navigation.
+//        AppCompatDelegate.setApplicationLocales(
+//                LocaleListCompat.create(Locale.forLanguageTag("ja"))
+//        );
+//        handleSettingLanguage();
 
-
-        // Check account
-
-//this.onOptionsItemSelected()
     }
 
-    private void handleSignIn(SharedPreferences sharedPreferences) {
+
+
+    private void handleSignIn() {
         View headerView = binding.navView.getHeaderView(0);
         ImageView avatar = headerView.findViewById(R.id.nav_header_image_avatar);
         TextView email = headerView.findViewById(R.id.nav_header_text_email);
         TextView fullName = headerView.findViewById(R.id.nav_header_text_full_name);
 
-        if (sharedPreferences.getBoolean("isSignedIn", false)) {
-            email.setText(sharedPreferences.getString("email", ""));
-            Glide.with(avatar).load(sharedPreferences.getString("linkAvatar", "https://i.ibb" +
+        if (accountSharedPreferences.getBoolean("isSignedIn", false)) {
+            email.setText(accountSharedPreferences.getString("email", ""));
+            Glide.with(avatar).load(accountSharedPreferences.getString("linkAvatar", "https://i.ibb" +
                     ".co/CvpTcNq/avatar.png")).apply(RequestOptions.circleCropTransform()).into(avatar);
-            fullName.setText(String.format("%s %s", sharedPreferences.getString(
-                    "firstname", ""), sharedPreferences.getString("surname", "")));
+            fullName.setText(String.format("%s %s", accountSharedPreferences.getString(
+                    "firstname", ""), accountSharedPreferences.getString("surname", "")));
 
         } else {
             Glide.with(avatar).load("https://i.ibb.co/CvpTcNq/avatar.png").apply(RequestOptions.circleCropTransform()).into(avatar);
@@ -109,19 +119,6 @@ public class MainActivity extends AppCompatActivity {
         invalidateMenu();
     }
 
-    public void setLocale(String lang) {
-        Locale myLocale = new Locale(lang);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.setLocale(myLocale);
-        res.updateConfiguration(conf, dm);
-//        Intent refresh = new Intent(this, MainActivity.class);
-//        finish();
-//        startActivity(refresh);
-
-    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_sign_in) {
@@ -134,6 +131,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (item.getItemId() == R.id.action_settings) {
+            navController.navigate(R.id.nav_setting);
+            return true;
+        }
+
         if (item.getItemId() == R.id.action_sign_out) {
             handleSignOut();
             navController.popBackStack(R.id.nav_home, false);
@@ -142,8 +144,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        NavController navController = Navigation.findNavController(this,
-                R.id.nav_host_fragment_content_main);
         return NavigationUI.onNavDestinationSelected(item, navController)
                 || super.onOptionsItemSelected(item);
     }
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.main, menu);
-        if (getSharedPreferences("account", MODE_PRIVATE).getBoolean("isSignedIn", false)) {
+        if (accountSharedPreferences.getBoolean("isSignedIn", false)) {
             menu.findItem(R.id.action_sign_in).setVisible(false);
             menu.findItem(R.id.action_sign_up).setVisible(false);
 
@@ -167,8 +167,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this,
-                R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_endpoint">https://hotel-management-server.fly.dev/</string>
+    <string name="api_address_vietnam">https://provinces.open-api.vn/api/</string>
+
+    <string name="sign_in_dialog_retry">再試行</string>
+    <string name="sign_in_dialog_register">登録</string>
+
+    <string name="success">成功</string>
+    <string name="reservation_success">予約完了</string>
+    <string name="price">価格</string>
+    <string name="type_room">部屋タイプ</string>
+    <string name="type_room_detail">部屋タイプ詳細</string>
+    <string name="view_direction">眺望</string>
+    <string name="view_direction_river">川</string>
+    <string name="view_direction_city">都市</string>
+    <string name="preferential_services">優待サービス</string>
+    <string name="size">サイズ</string>
+    <string name="adult_capacity">大人定員</string>
+    <string name="kid_capacity">子供定員</string>
+    <string name="amenities">アメニティ</string>
+    <string name="account">アカウント</string>
+    <string name="sign_in">ログイン</string>
+    <string name="sign_up">サインアップ</string>
+
+    <string name="email">メールアドレス</string>
+    <string name="phone">電話番号</string>
+    <string name="birthdate">生年月日</string>
+    <string name="gender">性別</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="firstname">名</string>
+    <string name="surname">姓</string>
+    <string name="password">パスワード</string>
+    <string name="province">都道府県</string>
+    <string name="district">区市町村</string>
+    <string name="ward">町名</string>
+    <string name="address">住所</string>
+
+    <string name="upload_image">画像アップロード</string>
+    <string name="update">更新</string>
+    <string name="update_success">プロフィールの更新が完了しました。</string>
+
+    <string name="login_no_account_question">アカウントをお持ちでないですか？</string>
+    <string name="retry">再試行</string>
+    <string name="ok">OK</string>
+    <string name="sign_in_failed_alert_title">ログイン失敗</string>
+    <string name="sign_up_failed_alert_title">サインアップ失敗</string>
+    <string name="sign_in_failed_alert_message">メールアドレスまたはパスワードが間違っています。もう一度お試しいただくか、新しいアカウントを作成してください。</string>
+    <string name="sign_up_failed_alert_message">このメールアドレスは既に使用されています。</string>
+    <string name="sign_in_success_message">ログインに成功しました。</string>
+    <string name="sign_up_success_message">サインアップに成功しました。</string>
+    <string name="sign_out_success_message">ログアウトに成功しました。</string>
+    <string name="sign_up_have_account_question">既にアカウントをお持ちですか？</string>
+
+    <string name="profile">プロフィール</string>
+    <string name="reservation">予約</string>
+    <string name="reserve">予約する</string>
+
+    <string name="datetime_from">開始日時</string>
+    <string name="date_from">開始日</string>
+    <string name="time_from">開始時間</string>
+    <string name="datetime_to">終了日時</string>
+    <string name="date_to">終了日</string>
+    <string name="time_to">終了時間</string>
+    <string name="number_people">人数</string>
+    <string name="adult_number">大人数</string>
+    <string name="kid_number">子供数</string>
+    <string name="total_price">合計金額</string>
+    <string name="reservation_id">予約番号</string>
+    <string name="reservation_history">予約履歴</string>
+    <string name="reservation_history_detail">予約履歴詳細</string>
+    <string name="created_at">作成日時</string>
+    <string name="room">部屋</string>
+    <string name="room_number">部屋番号</string>
+    <string name="floor">階</string>
+    <string name="status">ステータス</string>
+    <string name="status_waiting">待ち</string>
+    <string name="status_open">オープン</string>
+    <string name="status_in_progress">進行中</string>
+    <string name="status_end">終了</string>
+    <string name="status_cancel">キャンセル</string>
+    <string name="check_in_at">チェックイン時間</string>
+    <string name="checkout_at">チェックアウト時間</string>
+    <string name="updated_at">更新日時</string>
+    <string name="name">名前</string>
+    <string name="payment">支払い</string>
+    <string name="edit">編集</string>
+    <string name="bank">銀行</string>
+    <string name="warning">警告</string>
+    <string name="account_number">口座番号</string>
+    <string name="confirm">確認</string>
+    <string name="dismiss">閉じる</string>
+    <string name="contact_us">お問い合わせ</string>
+
+    <string name="require_input_message">このフィールドは必須です。</string>
+    <string name="exceed_capacity_limit_message">定員を超えています。</string>
+    <string name="invalid_input">無効な入力です。</string>
+    <string name="datetime_from_must_less_than_to_message">開始日時が終了日時より後になっています。</string>
+    <string name="out_of_room_title">満室です。</string>
+    <string name="out_of_room_message">他の日時または部屋タイプを選択してください。</string>
+    <string name="warning_payment_message">振込の際は、振込金額と振込内容を変更しないでください。</string>
+    <string name="cancel_reservation_alert_title">キャンセルしてもよろしいですか？</string>
+    <string name="cancel_waiting_reservation_alert_message">この操作は取り消せません。</string>
+    <string name="cancel_open_reservation_alert_message">この予約は既に支払いが済んでいます。</string>
+    <string name="cancel_in_progress_reservation_alert_message">この予約は既に支払いが済んでおり、現在使用中です。キャンセルした場合、支払われた金額は返金されません。</string>
+    <string name="cancel_reservation_success_title">予約キャンセル完了</string>
+    <string name="cancel_open_reservation_success_message">デポジットの返金については、お問い合わせください。</string>
+
+    <string name="app_name">ホテル予約アプリ</string>
+    <string name="booking_history">予約履歴</string>
+    <string name="change_password">パスワード変更</string>
+    <string name="back_to_home_page">ホーム画面に戻る</string>
+    <string name="navigation_drawer_open">ナビゲーションドロワーを開く</string>
+    <string name="navigation_drawer_close">ナビゲーションドロワーを閉じる</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">ナビゲーションヘッダー</string>
+    <string name="action_settings">設定</string>
+
+    <string name="menu_home">ホーム</string>
+    <string name="menu_gallery">ギャラリー</string>
+    <string name="menu_slideshow">スライドショー</string>
+    <string name="hello_blank_fragment">こんにちは、空白のフラグメント</string>
+    <string name="language">言語</string>
+    <string name="system_language">システム言語</string>
+    <string name="sign_out">ログアウト</string>
+    <string name="about_us">私たちについて</string>
+</resources>

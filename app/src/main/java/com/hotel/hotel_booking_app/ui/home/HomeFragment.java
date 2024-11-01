@@ -40,6 +40,13 @@ public class HomeFragment extends Fragment {
 //        NavController navController = Navigation.findNavController(getView());
         binding.recyclerViewListTypeRoom.setLayoutManager(new LinearLayoutManager(getContext()));
 
+
+        return root;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         new ApiService(getContext())
                 .getListTypeRoom()
                 .enqueue(
@@ -65,9 +72,7 @@ public class HomeFragment extends Fragment {
                                     Throwable throwable) {
                             }
                         });
-        return root;
     }
-
 
     @Override
     public void onDestroyView() {

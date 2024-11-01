@@ -121,4 +121,8 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="language">Language</string>
+    <string name="system_language">System language</string>
+    <string name="sign_out">Sign out</string>
+    <string name="about_us">About us</string>
 </resources>

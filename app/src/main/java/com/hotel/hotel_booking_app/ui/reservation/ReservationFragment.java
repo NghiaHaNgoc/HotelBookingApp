@@ -24,6 +24,7 @@ import com.hotel.hotel_booking_app.model.ApiResponse;
 import com.hotel.hotel_booking_app.model.Reservation;
 import com.hotel.hotel_booking_app.model.TypeRoom;
 import com.hotel.hotel_booking_app.service.ApiService;
+import com.hotel.hotel_booking_app.util.LanguageUtil;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -46,24 +47,25 @@ public class ReservationFragment extends Fragment {
     private TextInputEditText editTextTimeToPicker;
     private TextInputEditText editTextAdultNumber;
     private TextInputEditText editTextKidNumber;
-//    AtomicReference<ZonedDateTime> zonedDateTimeFrom;
-//    AtomicReference<ZonedDateTime> zonedDateTimeTo;
+    private ApiService apiService;
+    AtomicReference<ZonedDateTime> zonedDateTimeFrom;
+    AtomicReference<ZonedDateTime> zonedDateTimeTo;
 
     public ReservationFragment() {
         // Required empty public constructor
     }
 
-    public static ReservationFragment newInstance(String param1, String param2) {
-        ReservationFragment fragment = new ReservationFragment();
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Gson gson = new Gson();
+
         String typeRoomJson = getArguments().getString("type_room");
-        typeRoom = gson.fromJson(typeRoomJson, TypeRoom.class);
+        typeRoom = new Gson().fromJson(typeRoomJson, TypeRoom.class);
+        apiService = new ApiService(getContext());
+        zonedDateTimeFrom =
+                new AtomicReference<>(Instant.EPOCH.atZone(TimeZone.getDefault().toZoneId()));
+        zonedDateTimeTo =
+                new AtomicReference<>(Instant.EPOCH.atZone(TimeZone.getDefault().toZoneId()));
     }
 
     @Override
@@ -77,20 +79,14 @@ public class ReservationFragment extends Fragment {
         editTextAdultNumber = binding.editTextAdultNumber;
         editTextKidNumber = binding.editTextKidNumber;
 
-        View root = binding.getRoot();
-
         Calendar calendar = Calendar.getInstance();
+
         AlertDialog.Builder alertDialogError = new AlertDialog.Builder(getActivity());
         alertDialogError.setPositiveButton(getResources().getString(R.string.ok),
                 (dialog, id) -> {
                 });
         AlertDialog alertDialogLoading =
                 new AlertDialog.Builder(getActivity()).setView(R.layout.loading_progress).setCancelable(false).create();
-
-        AtomicReference<ZonedDateTime> zonedDateTimeFrom =
-                new AtomicReference<>(Instant.EPOCH.atZone(TimeZone.getDefault().toZoneId()));
-        AtomicReference<ZonedDateTime> zonedDateTimeTo =
-                new AtomicReference<>(Instant.EPOCH.atZone(TimeZone.getDefault().toZoneId()));
 
         // Setup date from picker dialog
         DatePickerDialog dateFromPickerDialog = new DatePickerDialog(getContext(), (datePicker, i
@@ -145,16 +141,6 @@ public class ReservationFragment extends Fragment {
             timeToPickerDialog.show();
         });
 
-        // Show type room header
-        if (!typeRoom.images.isEmpty())
-            Glide.with(binding.imageReservation).load(typeRoom.images.get(0)).placeholder(R.drawable.ic_menu_camera).into(binding.imageReservation);
-        binding.textReservationTypeRoomTitle.setText(typeRoom.title);
-        // Show capability
-        binding.inputLayoutAdultNumber.setHint(String.format("%s (1 - %s)",
-                getContext().getResources().getString(R.string.adult_number),
-                typeRoom.adultCapacity));
-        binding.inputLayoutKidNumber.setHint(String.format("%s (0 - %s)",
-                getContext().getResources().getString(R.string.kid_number), typeRoom.kidsCapacity));
         // Capacity filter
         editTextKidNumber.setFilters(new InputFilter[]{(charSequence, i, i1, spanned, i2, i3) -> {
             try {
@@ -220,12 +206,13 @@ public class ReservationFragment extends Fragment {
             alertDialogLoading.show();
 
             // Handle API request
-            new ApiService(getContext()).addReservation(input).enqueue(new Callback<ApiResponse<Reservation>>() {
+            apiService.addReservation(input).enqueue(new Callback<ApiResponse<Reservation>>() {
                 @Override
                 public void onResponse(Call<ApiResponse<Reservation>> call,
                                        Response<ApiResponse<Reservation>> response) {
                     alertDialogLoading.dismiss();
-                    if (response.body().status != 200) {
+                    ApiResponse<Reservation> body = response.body();
+                    if (body == null) {
                         alertDialogError.setTitle(getResources().getString(R.string.out_of_room_title));
                         alertDialogError.setMessage(getResources().getString(R.string.out_of_room_message));
                         alertDialogError.show();
@@ -234,8 +221,7 @@ public class ReservationFragment extends Fragment {
                     NavController navController = Navigation.findNavController(getView());
                     Bundle bundle = new Bundle();
                     bundle.putString("reservation_result",
-                            new Gson().toJson(response.body().result));
-                    bundle.putString("type_room", new Gson().toJson(typeRoom));
+                            new Gson().toJson(body.result));
                     navController.navigate(R.id.nav_reservation_success, bundle);
                 }
 
@@ -246,19 +232,47 @@ public class ReservationFragment extends Fragment {
                 }
             });
         });
-
-        return root;
+        return binding.getRoot();
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        setupFragment();
+    }
+
+    private void setupFragment() {
+        // Clear on resume
         editTextDateFromPicker.setText("");
         editTextDateToPicker.setText("");
         editTextTimeFromPicker.setText("");
         editTextTimeToPicker.setText("");
         editTextAdultNumber.setText("");
         editTextKidNumber.setText("");
+
+        // Show type room header
+        if (!typeRoom.images.isEmpty())
+            Glide.with(binding.imageReservation).load(typeRoom.images.get(0)).placeholder(R.drawable.ic_menu_camera).into(binding.imageReservation);
+
+        switch (LanguageUtil.getLanguage()) {
+            case LanguageUtil.VIETNAMESE:
+                binding.textReservationTypeRoomTitle.setText(typeRoom.title);
+                break;
+            case LanguageUtil.JAPANESE:
+                binding.textReservationTypeRoomTitle.setText(typeRoom.titleJa);
+                break;
+            default:
+                binding.textReservationTypeRoomTitle.setText(typeRoom.titleEn);
+        }
+
+
+        // Show capability
+        binding.inputLayoutAdultNumber.setHint(String.format("%s (1 - %s)",
+                getContext().getResources().getString(R.string.adult_number),
+                typeRoom.adultCapacity));
+        binding.inputLayoutKidNumber.setHint(String.format("%s (0 - %s)",
+                getContext().getResources().getString(R.string.kid_number), typeRoom.kidsCapacity));
+
     }
 
 
