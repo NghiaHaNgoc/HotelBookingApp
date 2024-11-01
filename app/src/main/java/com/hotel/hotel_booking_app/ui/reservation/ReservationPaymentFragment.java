@@ -1,6 +1,5 @@
 package com.hotel.hotel_booking_app.ui.reservation;
 
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -44,6 +43,16 @@ public class ReservationPaymentFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentReservationPaymentBinding.inflate(inflater, container, false);
 
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setupFragment();
+    }
+
+    public void setupFragment() {
         Glide.with(binding.imageReservationPaymentQr)
                 .load(Payment.getQRPayment(reservation.id, reservation.totalPrice))
                 .into(binding.imageReservationPaymentQr);
@@ -73,12 +82,10 @@ public class ReservationPaymentFragment extends Fragment {
         warnSpannableString.setSpan(
                 new ForegroundColorSpan(
                         getResources().getColor(R.color.yellow_700, getContext().getTheme())
-                ), 0, warnSpannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);;
+                ), 0, warnSpannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ;
         binding.textReservationPaymentWarning.setText(warnSpannableString);
         binding.textReservationPaymentWarning.append(getResources().getString(R.string.warning_payment_message));
-
-
-        return binding.getRoot();
     }
 
     private void appendBoldText(TextView tv, String text) {

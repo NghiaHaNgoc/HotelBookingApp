@@ -13,24 +13,24 @@ import com.bumptech.glide.Glide;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.model.TypeRoom;
 import com.hotel.hotel_booking_app.databinding.FragmentHomeTypeRoomCardBinding;
+import com.hotel.hotel_booking_app.util.LanguageUtil;
 import com.hotel.hotel_booking_app.util.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 
 public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<MyHomeTypeRoomCardRecyclerViewAdapter.ViewHolder> {
     private Context context;
-    private final List<TypeRoom> mValues;
+    private final List<TypeRoom> typeRoomList;
     private OnClickListener onClickListener;
 
     public MyHomeTypeRoomCardRecyclerViewAdapter(Context context, List<TypeRoom> items) {
         this.context = context;
         if (items != null)
-            mValues = items;
+            typeRoomList = items;
         else
-            mValues = new ArrayList<>();
+            typeRoomList = new ArrayList<>();
     }
 
     @NonNull
@@ -44,32 +44,41 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        holder.mItem = mValues.get(position);
-        holder.title.setText(mValues.get(position).title);
+        TypeRoom typeRoom = typeRoomList.get(position);
+        switch (LanguageUtil.getLanguage()) {
+            case LanguageUtil.VIETNAMESE:
+                holder.title.setText(typeRoom.title);
+                break;
+            case LanguageUtil.JAPANESE:
+                holder.title.setText(typeRoom.titleJa);
+                break;
+            default:
+                holder.title.setText(typeRoom.titleEn);
+        }
+
         String price = String.format("%s: %sVND",
                 StringUtil.capitalize(context.getResources().getString(R.string.price)),
-                mValues.get(position).basePrice);
+                typeRoomList.get(position).basePrice);
         holder.price.setText(price);
 
-        if (!mValues.get(position).images.isEmpty())
-            Glide.with(holder.image).load(mValues.get(position).images.get(0)).placeholder(R.drawable.ic_menu_gallery).into(holder.image);
+        if (!typeRoomList.get(position).images.isEmpty())
+            Glide.with(holder.image).load(typeRoomList.get(position).images.get(0)).placeholder(R.drawable.ic_menu_gallery).into(holder.image);
         holder.itemView.setOnClickListener(view -> {
             if (onClickListener != null) {
-                onClickListener.onClick(mValues.get(position));
+                onClickListener.onClick(typeRoomList.get(position));
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return mValues.size();
+        return typeRoomList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final ImageView image;
         public final TextView title;
         public final TextView price;
-        public TypeRoom mItem;
 
 
         public ViewHolder(FragmentHomeTypeRoomCardBinding binding) {

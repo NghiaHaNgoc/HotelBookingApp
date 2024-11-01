@@ -22,6 +22,7 @@ import com.hotel.hotel_booking_app.databinding.FragmentReservationHistoryDetailB
 import com.hotel.hotel_booking_app.model.ApiResponse;
 import com.hotel.hotel_booking_app.model.Reservation;
 import com.hotel.hotel_booking_app.service.ApiService;
+import com.hotel.hotel_booking_app.util.LanguageUtil;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -269,8 +270,20 @@ public class ReservationHistoryDetailFragment extends Fragment {
         String typeRoomTitle = String.format("● %s: ",
                 getResources().getString(R.string.type_room));
         binding.textReservationHistoryDetailTypeRoomTitle.setText(typeRoomTitle);
-        appendBoldText(binding.textReservationHistoryDetailTypeRoomTitle,
-                reservation.room.typeRoom.title);
+        switch (LanguageUtil.getLanguage()) {
+            case LanguageUtil.VIETNAMESE:
+                appendBoldText(binding.textReservationHistoryDetailTypeRoomTitle,
+                        reservation.room.typeRoom.title);
+                break;
+            case LanguageUtil.JAPANESE:
+                appendBoldText(binding.textReservationHistoryDetailTypeRoomTitle,
+                        reservation.room.typeRoom.titleJa);
+                break;
+            default:
+                appendBoldText(binding.textReservationHistoryDetailTypeRoomTitle,
+                        reservation.room.typeRoom.titleEn);
+        }
+
     }
 
     private void appendBoldText(TextView tv, String text) {

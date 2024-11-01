@@ -14,7 +14,7 @@ import com.google.gson.Gson;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.databinding.FragmentReservationSuccessBinding;
 import com.hotel.hotel_booking_app.model.Reservation;
-import com.hotel.hotel_booking_app.model.TypeRoom;
+import com.hotel.hotel_booking_app.util.LanguageUtil;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -24,16 +24,10 @@ import java.util.TimeZone;
 
 public class ReservationSuccessFragment extends Fragment {
     private Reservation reservation;
-    private TypeRoom typeRoom;
     private FragmentReservationSuccessBinding binding;
 
     public ReservationSuccessFragment() {
         // Required empty public constructor
-    }
-
-    public static ReservationSuccessFragment newInstance(String param1, String param2) {
-        ReservationSuccessFragment fragment = new ReservationSuccessFragment();
-        return fragment;
     }
 
     @Override
@@ -42,7 +36,6 @@ public class ReservationSuccessFragment extends Fragment {
         if (getArguments() != null) {
             reservation = new Gson().fromJson(getArguments().getString("reservation_result"),
                     Reservation.class);
-            typeRoom = new Gson().fromJson(getArguments().getString("type_room"), TypeRoom.class);
         }
     }
 
@@ -50,8 +43,31 @@ public class ReservationSuccessFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentReservationSuccessBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
+        // Action payment
+        binding.buttonReservationSuccessPayment.setOnClickListener(view -> {
+            NavController navController = Navigation.findNavController(getView());
+            Bundle bundle = new Bundle();
+            bundle.putString("reservation", new Gson().toJson(reservation));
+            navController.navigate(R.id.nav_reservation_payment, bundle);
+        });
+        // Action go home
+        binding.buttonReservationSuccessHome.setOnClickListener(view -> {
+            NavController navController = Navigation.findNavController(getView());
+            navController.popBackStack(R.id.nav_home, false);
+
+        });
+
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        setupFragment();
+    }
+
+    private void setupFragment() {
         ZoneId currentZoneId = TimeZone.getDefault().toZoneId();
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy - HH:mm");
         // Room number
@@ -70,7 +86,18 @@ public class ReservationSuccessFragment extends Fragment {
         binding.textReservationSuccessId.setText(reservationId);
 
         // Type room
-        String typeRoomStr = String.format("%s: %s", getResources().getString(R.string.type_room), typeRoom.title);
+        String typeRoomStr = String.format("%s: ", getResources().getString(R.string.type_room));
+        switch (LanguageUtil.getLanguage()) {
+            case LanguageUtil.VIETNAMESE:
+                typeRoomStr += reservation.room.typeRoom.title;
+                break;
+            case LanguageUtil.JAPANESE:
+                typeRoomStr += reservation.room.typeRoom.titleJa;
+                break;
+            default:
+                typeRoomStr += reservation.room.typeRoom.titleEn;
+        }
+
         binding.textReservationSuccessTypeRoom.setText(typeRoomStr);
 
         // Datetime from
@@ -107,21 +134,5 @@ public class ReservationSuccessFragment extends Fragment {
         String createdAt = String.format("%s: %s", getResources().getString(R.string.created_at),
                 createdAtObj.format(dateTimeFormatter));
         binding.textReservationSuccessCreatedAt.setText(createdAt);
-
-        // Action payment
-        binding.buttonReservationSuccessPayment.setOnClickListener(view -> {
-            NavController navController = Navigation.findNavController(getView());
-            Bundle bundle = new Bundle();
-            bundle.putString("reservation", new Gson().toJson(reservation));
-            navController.navigate(R.id.nav_reservation_payment, bundle);
-        });
-        // Action go home
-        binding.buttonReservationSuccessHome.setOnClickListener(view -> {
-            NavController navController = Navigation.findNavController(getView());
-            navController.popBackStack(R.id.nav_home, false);
-
-        });
-
-        return root;
     }
 }
