@@ -41,6 +41,17 @@
     <string name="update">Cập nhật</string>
     <string name="update_success">Cập nhật hồ sơ thành công!</string>
 
+    <string name="old_password">Mật khẩu cũ</string>
+    <string name="new_password">Mật khẩu mới</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="old_password_required">Mật khẩu cũ là bắt buộc!</string>
+    <string name="new_password_required">Mật khẩu mới là bắt buộc!</string>
+    <string name="change_password_success">Thay đổi mật khẩu thành công!</string>
+    <string name="change_password_failed">Thay đổi mật khẩu thất bại!</string>
+    <string name="min_length_password">Mật khẩu phải có ít nhất 6 ký tự!</string>
+    <string name="match_confirm_password">Mật khẩu xác nhận phải khớp với mật khẩu mới!</string>
+    <string name="wrong_old_password">Mật khẩu cũ không đúng!</string>
+
     <string name="login_no_account_question">Chưa có tài khoản?</string>
     <string name="retry">Thử lại</string>
     <string name="ok">Xác nhận</string>

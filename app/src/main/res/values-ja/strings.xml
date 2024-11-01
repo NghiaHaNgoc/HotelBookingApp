@@ -41,6 +41,17 @@
     <string name="update">更新</string>
     <string name="update_success">プロフィールの更新が完了しました。</string>
 
+    <string name="old_password">古いパスワード</string>
+    <string name="new_password">新しいパスワード</string>
+    <string name="confirm_password">パスワードの確認</string>
+    <string name="old_password_required">古いパスワードは必須です！</string>
+    <string name="new_password_required">新しいパスワードは必須です！</string>
+    <string name="change_password_success">パスワードの変更に成功しました！</string>
+    <string name="change_password_failed">パスワードの変更に失敗しました！</string>
+    <string name="min_length_password">パスワードは6文字以上でなければなりません！</string>
+    <string name="match_confirm_password">確認用パスワードは新しいパスワードと一致する必要があります！</string>
+    <string name="wrong_old_password">古いパスワードが間違っています！</string>
+
     <string name="login_no_account_question">アカウントをお持ちでないですか？</string>
     <string name="retry">再試行</string>
     <string name="ok">OK</string>
