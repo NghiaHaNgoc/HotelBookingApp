@@ -23,6 +23,12 @@
     </fragment>
 
     <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.hotel.hotel_booking_app.ui.profile.ChangePasswordFragment"
+        android:label="@string/password"
+        tools:layout="@layout/fragment_change_password"/>
+
+    <fragment
         android:id="@+id/nav_reservation_history"
         android:name="com.hotel.hotel_booking_app.ui.reservation_history.ReservationHistoryFragment"
         android:label="@string/reservation_history"

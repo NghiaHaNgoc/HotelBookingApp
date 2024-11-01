@@ -19,4 +19,6 @@ public interface AccountService {
     Call<ApiResponse<User>> getProfile(@Header("Authorization") String authorization);
     @POST("user/profile")
     Call<ApiResponse<User>> updateProfile(@Header("Authorization") String authorization, @Body User input);
+    @POST("user/change-password")
+    Call<ApiResponse<User.FormChangePassword>> changePassword(@Header("Authorization") String authorization, @Body User.FormChangePassword input);
 }
