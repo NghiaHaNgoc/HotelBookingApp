@@ -118,7 +118,7 @@
     <string name="cancel_reservation_success_title">予約キャンセル完了</string>
     <string name="cancel_open_reservation_success_message">デポジットの返金については、お問い合わせください。</string>
 
-    <string name="app_name">ホテル予約アプリ</string>
+    <string name="app_name">ホテル HK2T</string>
     <string name="booking_history">予約履歴</string>
     <string name="change_password">パスワード変更</string>
     <string name="back_to_home_page">ホーム画面に戻る</string>
@@ -145,5 +145,6 @@
     <string name="password_required">パスワードが必要です！</string>
     <string name="password_min_characters">パスワードは6文字以上である必要があります！</string>
 
+    <string name="description_hotel">恵まれた景観を誇る、ベトナム・クィニョン市ケインランの中心部に位置するHK2Tホテルは、サイゴン川を一望できるラグジュアリーなリゾートです。独創的な高級な宿泊施設と、比類のないサービス、そして人気の観光スポットへのアクセスが便利な立地で、忘れられない休暇をお過ごしください。</string>
 
 </resources>

@@ -118,7 +118,7 @@
     <string name="cancel_reservation_success_title">Hủy đặt phòng thành công!</string>
     <string name="cancel_open_reservation_success_message">Vui lòng liên hệ chúng tôi để được hoàn tiền đặt cọc.</string>
 
-    <string name="app_name">Ứng dụng Đặt Phòng Khách Sạn</string>
+    <string name="app_name">Khách Sạn HK2T</string>
     <string name="booking_history">Lịch sử đặt phòng</string>
     <string name="change_password">Đổi mật khẩu</string>
     <string name="back_to_home_page">Trở về trang chủ</string>
@@ -144,5 +144,7 @@
     <string name="email_wrong_format">Email sai định dạng</string>
     <string name="password_required">Mật khẩu là bắc buột !</string>
     <string name="password_min_characters">Mật khẩu phải ít nhất 6 ký tự !</string>
+
+    <string name="description_hotel">Nằm ở ngay trung tâm Ghềnh Ráng - Quy Nhơn, Khách sạn HK2T là thiên đường nghỉ dưỡng với tầm nhìn tuyệt đẹp ra Sông Sài Gòn. Tận hưởng kỳ nghỉ đáng nhớ giữa không gian nghỉ dưỡng sang trọng độc đáo cùng dịch vụ đẳng cấp và vị trí thuận tiện để khám phá các điểm du lịch nổi tiếng.</string>
 
 </resources>

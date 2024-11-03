@@ -118,7 +118,7 @@
     <string name="cancel_open_reservation_success_message">Please contact us to get your deposit refunded.</string>
 
 
-    <string name="app_name">Hotel-Booking-App</string>
+    <string name="app_name">Hotel HK2T</string>
     <string name="booking_history">Booking history</string>
     <string name="change_password">Change password</string>
     <string name="back_to_home_page">Back to home page</string>
@@ -145,4 +145,7 @@
     <string name="email_wrong_format">Email is wrong format !</string>
     <string name="password_required">Password is required !</string>
     <string name="password_min_characters">Password must be at least 6 characters !</string>
+
+    <string name="description_hotel">Located right in the heart of Ghenh Rang - Quy Nhon, HK2T Hotel is paradise Resort with beautiful views of the Saigon River. Enjoy a vacation memorable amidst the unique luxurious resort space and classy service and convenient location to explore famous tourist destinations.</string>
+
 </resources>

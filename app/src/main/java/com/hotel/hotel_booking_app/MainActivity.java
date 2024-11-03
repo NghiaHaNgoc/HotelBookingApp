@@ -136,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (item.getItemId() == R.id.action_about_us) {
+            navController.navigate(R.id.nav_about_us);
+            return true;
+        }
+
         if (item.getItemId() == R.id.action_sign_out) {
             handleSignOut();
             navController.popBackStack(R.id.nav_home, false);

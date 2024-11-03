@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".ui.about_us.AboutUsFragment">
+
+    <!-- Hotel Image -->
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_about_us" />
+
+    <!-- Hotel Name -->
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:textStyle="bold" />
+
+    <!-- Hotel Description -->
+    <TextView
+        android:id="@+id/hotel_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/description_hotel"
+        android:textSize="16sp"
+        android:textColor="#666666" />
+
+    <!-- Contact Information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/hotel_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address: 50 Nguyen Hue , Quy Nhon , Binh Dinh"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:drawablePadding="8dp" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:id="@+id/hotel_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Phone: +935 187 859"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:drawablePadding="8dp" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/hotel_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Email: hotelHK2T@gmail.com"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:drawablePadding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
