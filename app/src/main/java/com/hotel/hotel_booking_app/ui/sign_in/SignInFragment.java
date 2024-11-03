@@ -184,13 +184,13 @@ public class SignInFragment extends Fragment {
 
         // validate email
         if (TextUtils.isEmpty(email)) {
-            messageErrorEmail = "Email is required !";
+            messageErrorEmail = getString(R.string.email_required);
         }
         if (
             !Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
             messageErrorEmail.isEmpty()
         ) {
-            messageErrorEmail = "Email is wrong format !";
+            messageErrorEmail = getString(R.string.email_wrong_format);
         }
         if (!messageErrorEmail.isEmpty()) {
             emailInputLayout.setError(messageErrorEmail);
@@ -198,10 +198,10 @@ public class SignInFragment extends Fragment {
 
         //validate password
         if (TextUtils.isEmpty(password)) {
-            messageErrorPassword = "Password is required !";
+            messageErrorPassword = getString(R.string.password_required);
         }
         if (password.length() < 6 && messageErrorPassword.isEmpty()) {
-            messageErrorPassword = "Password must be at least 6 characters !";
+            messageErrorPassword = getString(R.string.password_min_characters);
         }
         if (!messageErrorPassword.isEmpty()) {
             passwordInputLayout.setError(messageErrorPassword);

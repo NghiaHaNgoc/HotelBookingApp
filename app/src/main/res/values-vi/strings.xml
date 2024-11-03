@@ -137,4 +137,12 @@
     <string name="system_language">Ngôn ngữ hệ thống</string>
     <string name="sign_out">Đăng xuất</string>
     <string name="about_us">Về chúng tôi</string>
+
+    <string name="surname_required">Tên đệm là bắc buột !</string>
+    <string name="firstname_required">Họ là bắc buột !</string>
+    <string name="email_required">Email là bắc buột !</string>
+    <string name="email_wrong_format">Email sai định dạng</string>
+    <string name="password_required">Mật khẩu là bắc buột !</string>
+    <string name="password_min_characters">Mật khẩu phải ít nhất 6 ký tự !</string>
+
 </resources>

@@ -199,7 +199,7 @@ public class SignUpFragment extends Fragment {
 
         //validate firstname
         if (TextUtils.isEmpty(firstname)) {
-            messageErrorFirstname = "Firstname is required !";
+            messageErrorFirstname = getString(R.string.firstname_required);
         }
         if (!messageErrorFirstname.isEmpty()) {
             binding.firstnameInputLayout.setError(messageErrorFirstname);
@@ -207,7 +207,7 @@ public class SignUpFragment extends Fragment {
 
         //validate surname
         if (TextUtils.isEmpty(surname)) {
-            messageErrorSurname = "Surname is required !";
+            messageErrorSurname = getString(R.string.surname_required);
         }
         if (!messageErrorSurname.isEmpty()) {
             binding.surnameInputLayout.setError(messageErrorSurname);
@@ -215,13 +215,13 @@ public class SignUpFragment extends Fragment {
 
         // validate email
         if (TextUtils.isEmpty(email)) {
-            messageErrorEmail = "Email is required !";
+            messageErrorEmail = getString(R.string.email_required);
         }
         if (
             !Patterns.EMAIL_ADDRESS.matcher(email).matches() &&
             messageErrorEmail.isEmpty()
         ) {
-            messageErrorEmail = "Email is wrong format !";
+            messageErrorEmail = getString(R.string.email_wrong_format);
         }
         if (!messageErrorEmail.isEmpty()) {
             binding.emailInputLayout.setError(messageErrorEmail);
@@ -229,10 +229,10 @@ public class SignUpFragment extends Fragment {
 
         //validate password
         if (TextUtils.isEmpty(password)) {
-            messageErrorPassword = "Password is required !";
+            messageErrorPassword = getString(R.string.password_required);
         }
         if (password.length() < 6 && messageErrorPassword.isEmpty()) {
-            messageErrorPassword = "Password must be at least 6 characters !";
+            messageErrorPassword = getString(R.string.password_min_characters);
         }
         if (!messageErrorPassword.isEmpty()) {
             binding.passwordInputLayout.setError(messageErrorPassword);

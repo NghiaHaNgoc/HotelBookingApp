@@ -138,4 +138,11 @@
     <string name="system_language">System language</string>
     <string name="sign_out">Sign out</string>
     <string name="about_us">About us</string>
+
+    <string name="surname_required">Surname is required !</string>
+    <string name="firstname_required">Firstname is required !</string>
+    <string name="email_required">Email is required !</string>
+    <string name="email_wrong_format">Email is wrong format !</string>
+    <string name="password_required">Password is required !</string>
+    <string name="password_min_characters">Password must be at least 6 characters !</string>
 </resources>

@@ -137,4 +137,13 @@
     <string name="system_language">システム言語</string>
     <string name="sign_out">ログアウト</string>
     <string name="about_us">私たちについて</string>
+
+    <string name="surname_required">苗字が必要です！</string>
+    <string name="firstname_required">名前が必要です！</string>
+    <string name="email_required">メールアドレスが必要です！</string>
+    <string name="email_wrong_format">メールアドレスの形式が間違っています！</string>
+    <string name="password_required">パスワードが必要です！</string>
+    <string name="password_min_characters">パスワードは6文字以上である必要があります！</string>
+
+
 </resources>
