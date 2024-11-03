@@ -129,7 +129,7 @@ public class ReservationFragment extends Fragment {
             dateToPickerDialog.show();
         });
 
-        // Setup time from picker dialog
+        // Setup time to picker dialog
         TimePickerDialog timeToPickerDialog = new TimePickerDialog(getContext(), (timePicker, i,
                                                                                   i1) -> {
             zonedDateTimeTo.set(zonedDateTimeTo.get().withHour(i).withMinute(i1));
@@ -170,12 +170,12 @@ public class ReservationFragment extends Fragment {
         }});
 
         binding.buttonSubmitReservation.setOnClickListener(view -> {
-            String dateFrom = binding.editTextDateFromPicker.getText().toString();
-            String timeFrom = binding.editTextTimeFromPicker.getText().toString();
-            String dateTo = binding.editTextDateToPicker.getText().toString();
-            String timeTo = binding.editTextTimeToPicker.getText().toString();
-            String adultNumber = binding.editTextAdultNumber.getText().toString();
-            String kidNumber = binding.editTextKidNumber.getText().toString();
+            String dateFrom = editTextDateFromPicker.getText().toString();
+            String timeFrom = editTextTimeFromPicker.getText().toString();
+            String dateTo = editTextDateToPicker.getText().toString();
+            String timeTo = editTextTimeToPicker.getText().toString();
+            String adultNumber = editTextAdultNumber.getText().toString();
+            String kidNumber = editTextKidNumber.getText().toString();
             Instant checkinAt = zonedDateTimeFrom.get().toInstant();
             Instant checkoutAt = zonedDateTimeTo.get().toInstant();
             if (!checkAllFields(dateFrom, timeFrom, dateTo, timeTo, adultNumber)) {
@@ -190,6 +190,7 @@ public class ReservationFragment extends Fragment {
             Duration duration = Duration.between(checkinAt, checkoutAt);
             int totalPrice = (int) Math.ceil(duration.toHours()) * typeRoom.basePrice;
 
+            int adultNumberInt = Integer.parseInt(adultNumber);
             int kidNumberInt = 0;
             try {
                 kidNumberInt = Integer.parseInt(kidNumber);
@@ -199,7 +200,7 @@ public class ReservationFragment extends Fragment {
                     new Reservation.ReservationInput(
                             checkinAt.toString(),
                             checkoutAt.toString(),
-                            Integer.parseInt(adultNumber),
+                            adultNumberInt,
                             kidNumberInt,
                             totalPrice,
                             typeRoom.id);
