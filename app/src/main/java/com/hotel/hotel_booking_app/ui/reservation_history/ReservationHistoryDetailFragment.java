@@ -137,6 +137,14 @@ public class ReservationHistoryDetailFragment extends Fragment {
             navController.navigate(R.id.nav_reservation_payment, bundle);
         });
 
+        binding.buttonReservationHistoryDetailEdit.setOnClickListener(view -> {
+            NavController navController = Navigation.findNavController(getView());
+            Bundle bundle = new Bundle();
+            bundle.putString("reservation",new Gson().toJson(reservation));
+            navController.navigate(R.id.nav_reservation_update, bundle);
+
+        });
+
         // Inflate the layout for this fragment
         return binding.getRoot();
     }

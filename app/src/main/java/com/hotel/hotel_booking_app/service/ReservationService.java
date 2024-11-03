@@ -16,11 +16,16 @@ public interface ReservationService {
     @POST("user/reservation/add")
     Call<ApiResponse<Reservation>> addReservation(@Header("Authorization") String authorization,
                                                   @Body Reservation.ReservationInput input);
+
     @GET("customer/reservation/list")
     Call<ApiResponse<List<Reservation>>> listReservation(@Header("Authorization") String authorization);
 
     @GET("customer/reservation/{id}")
-    Call<ApiResponse<Reservation>> getReservation(@Header("Authorization") String authorization, @Path("id") int reservationId);
+    Call<ApiResponse<Reservation>> getReservation(@Header("Authorization") String authorization,
+                                                  @Path("id") int reservationId);
+
+    @POST("customer/reservation/{id}/update")
+    Call<ApiResponse<Reservation>> updateReservation(@Header("Authorization") String authorization, @Path("id") int reservationId, @Body Reservation.ReservationInput input);
 
     @POST("customer/reservation/{id}/cancel")
     Call<ApiResponse<Reservation>> cancelReservation(@Header("Authorization") String authorization, @Path("id") int reservationId);

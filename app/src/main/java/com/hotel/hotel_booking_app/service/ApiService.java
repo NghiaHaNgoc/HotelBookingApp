@@ -71,6 +71,10 @@ public class ApiService {
         return service.getReservation(getAuthorization(), id);
     }
 
+    public Call<ApiResponse<Reservation>> updateReservation(int reservationId, Reservation.ReservationInput input) {
+        return service.updateReservation(getAuthorization(), reservationId, input);
+    }
+
     public Call<ApiResponse<Reservation>> cancelReservation(int id) {
         return service.cancelReservation(getAuthorization(), id);
     }
