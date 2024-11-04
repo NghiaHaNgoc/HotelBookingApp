@@ -146,5 +146,7 @@
     <string name="password_min_characters">パスワードは6文字以上である必要があります！</string>
 
     <string name="description_hotel">恵まれた景観を誇る、ベトナム・クィニョン市ケインランの中心部に位置するHK2Tホテルは、サイゴン川を一望できるラグジュアリーなリゾートです。独創的な高級な宿泊施設と、比類のないサービス、そして人気の観光スポットへのアクセスが便利な立地で、忘れられない休暇をお過ごしください。</string>
+    <string name="our_location">私たちの場所</string>
+    <string name="maps">地図</string>
 
 </resources>

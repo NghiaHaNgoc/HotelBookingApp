@@ -80,6 +80,12 @@
         tools:layout="@layout/fragment_about_us"/>
 
     <fragment
+        android:id="@+id/nav_about_us_map"
+        android:name="com.hotel.hotel_booking_app.ui.about_us.MapsFragment"
+        android:label="@string/maps"
+        tools:layout="@layout/fragment_maps"/>
+
+    <fragment
         android:id="@+id/nav_sign_in"
         android:name="com.hotel.hotel_booking_app.ui.sign_in.SignInFragment"
         android:label="@string/sign_in"
