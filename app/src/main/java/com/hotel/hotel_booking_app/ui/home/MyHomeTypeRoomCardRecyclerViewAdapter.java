@@ -56,9 +56,10 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
                 holder.title.setText(typeRoom.titleEn);
         }
 
-        String price = String.format("%s: %sVND",
+        String price = String.format("%s: %s VND/%s",
                 StringUtil.capitalize(context.getResources().getString(R.string.price)),
-                typeRoomList.get(position).basePrice);
+                typeRoomList.get(position).basePrice,
+                context.getResources().getString(R.string.hour));
         holder.price.setText(price);
 
         if (!typeRoomList.get(position).images.isEmpty())

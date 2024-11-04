@@ -19,6 +19,7 @@
     <string name="adult_capacity">Số người lớn</string>
     <string name="kid_capacity">Số trẻ em</string>
     <string name="amenities">Tiện nghi</string>
+    <string name="other_amenities">Khác</string>
     <string name="account">Tài khoản</string>
     <string name="sign_in">Đăng nhập</string>
     <string name="sign_up">Đăng ký</string>
@@ -148,5 +149,10 @@
     <string name="description_hotel">Nằm ở ngay trung tâm Ghềnh Ráng - Quy Nhơn, Khách sạn HK2T là thiên đường nghỉ dưỡng với tầm nhìn tuyệt đẹp ra Sông Sài Gòn. Tận hưởng kỳ nghỉ đáng nhớ giữa không gian nghỉ dưỡng sang trọng độc đáo cùng dịch vụ đẳng cấp và vị trí thuận tiện để khám phá các điểm du lịch nổi tiếng.</string>
     <string name="our_location">vị trí của chúng tôi</string>
     <string name="maps">Bản đồ</string>
+    <string name="hour">Giờ</string>
+    <string name="general_amenities">Chung</string>
+    <string name="bathroom_amenities">Phòng tắm</string>
+    <string name="personal_information">Thông tin cá nhân</string>
+    <string name="location">Vị trí</string>
 
 </resources>

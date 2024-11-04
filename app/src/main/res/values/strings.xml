@@ -17,6 +17,9 @@
     <string name="adult_capacity">Adult capacity</string>
     <string name="kid_capacity">Kid capacity</string>
     <string name="amenities">Amenities</string>
+    <string name="general_amenities">General</string>
+    <string name="bathroom_amenities">Bathroom</string>
+    <string name="other_amenities">Other</string>
     <string name="account">Account</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_up">Sign up</string>
@@ -149,5 +152,8 @@
     <string name="description_hotel">Located right in the heart of Ghenh Rang - Quy Nhon, HK2T Hotel is paradise Resort with beautiful views of the Saigon River. Enjoy a vacation memorable amidst the unique luxurious resort space and classy service and convenient location to explore famous tourist destinations.</string>
     <string name="our_location">Our location</string>
     <string name="maps">Maps</string>
+    <string name="hour">Hour</string>
+    <string name="personal_information">Personal information</string>
+    <string name="location">Location</string>
 
 </resources>

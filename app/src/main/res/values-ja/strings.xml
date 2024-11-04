@@ -19,6 +19,7 @@
     <string name="adult_capacity">大人定員</string>
     <string name="kid_capacity">子供定員</string>
     <string name="amenities">アメニティ</string>
+    <string name="other_amenities">他の</string>
     <string name="account">アカウント</string>
     <string name="sign_in">ログイン</string>
     <string name="sign_up">サインアップ</string>
@@ -148,5 +149,10 @@
     <string name="description_hotel">恵まれた景観を誇る、ベトナム・クィニョン市ケインランの中心部に位置するHK2Tホテルは、サイゴン川を一望できるラグジュアリーなリゾートです。独創的な高級な宿泊施設と、比類のないサービス、そして人気の観光スポットへのアクセスが便利な立地で、忘れられない休暇をお過ごしください。</string>
     <string name="our_location">私たちの場所</string>
     <string name="maps">地図</string>
+    <string name="hour">時間</string>
+    <string name="general_amenities">一般的な</string>
+    <string name="bathroom_amenities">バスルーム</string>
+    <string name="personal_information">個人情報</string>
+    <string name="location">位置</string>
 
 </resources>
