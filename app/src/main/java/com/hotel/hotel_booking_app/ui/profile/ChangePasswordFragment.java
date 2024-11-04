@@ -1,9 +1,12 @@
 package com.hotel.hotel_booking_app.ui.profile;
 
 import android.app.AlertDialog;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.text.Editable;
 import android.text.TextUtils;
@@ -33,7 +36,8 @@ import retrofit2.Response;
 public class ChangePasswordFragment extends Fragment {
     private FragmentChangePasswordBinding binding;
     private AlertDialog alertDialogLoading;
-
+    private SharedPreferences accountSharedPreferences;
+    private boolean isFirstLaunch;
 
     public ChangePasswordFragment() {
         // Required empty public constructor
@@ -49,12 +53,19 @@ public class ChangePasswordFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isFirstLaunch = true;
+        accountSharedPreferences = getContext().getSharedPreferences("account", Context.MODE_PRIVATE);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentChangePasswordBinding.inflate(inflater, container, false);
+
+        if (!accountSharedPreferences.getBoolean("isSignedIn", false)) {
+            return binding.getRoot();
+        }
+
         alertDialogLoading = new AlertDialog.Builder(
                 getActivity(),
                 R.style.TransparentDialog
@@ -159,6 +170,20 @@ public class ChangePasswordFragment extends Fragment {
         });
         // Inflate the layout for this fragment
         return binding.getRoot();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (!accountSharedPreferences.getBoolean("isSignedIn", false)) {
+            if (isFirstLaunch) {
+                Navigation.findNavController(getView()).navigate(R.id.nav_sign_in);
+            } else {
+                Navigation.findNavController(getView()).popBackStack(R.id.nav_home, false);
+            }
+        }
+        isFirstLaunch = false;
+
     }
 
     private boolean validateFormChangePassword(

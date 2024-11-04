@@ -70,6 +70,7 @@ public class ProfileFragment extends Fragment {
     private final List<District> districtsList = new ArrayList<>();
     private final List<Ward> wardsList = new ArrayList<>();
     private User user;
+    private boolean isFirstLaunch;
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -84,6 +85,8 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isFirstLaunch = true;
+        accountSharedPreferences = getContext().getSharedPreferences("account", Context.MODE_PRIVATE);
 
         String jsonStringProvinces = FileUtil.parseJSON(requireContext(), R.raw.provinces);
         JsonArray jsonArrayProvinces = JsonParser.parseString(jsonStringProvinces).getAsJsonArray();
@@ -159,12 +162,17 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         binding = FragmentProfileBinding.inflate(inflater, container, false);
+
+        if (!accountSharedPreferences.getBoolean("isSignedIn", false)) {
+            return binding.getRoot();
+        }
+
         alertDialogLoading = new AlertDialog.Builder(
                 getActivity(),
                 R.style.TransparentDialog
         ).setView(R.layout.loading_progress).setCancelable(false).create();
-        accountSharedPreferences = getContext().getSharedPreferences("account", Context.MODE_PRIVATE);
 
         alertDialogLoading.show();
         fetchProfileUser();
@@ -265,6 +273,20 @@ public class ProfileFragment extends Fragment {
         return binding.getRoot();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (!accountSharedPreferences.getBoolean("isSignedIn", false)) {
+            if (isFirstLaunch) {
+                Navigation.findNavController(getView()).navigate(R.id.nav_sign_in);
+            } else {
+                Navigation.findNavController(getView()).popBackStack(R.id.nav_home, false);
+            }
+        }
+        isFirstLaunch = false;
+
+    }
+
     private <T> void setListAutoComplete(AutoCompleteTextView autoCompleteTextView, List<T> listOption) {
         ArrayAdapter<T> adapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_dropdown_item_1line, listOption);
         autoCompleteTextView.setAdapter(adapter);
@@ -303,7 +325,9 @@ public class ProfileFragment extends Fragment {
         binding.phoneProfile.setText(user.phone);
         binding.emailProfile.setText(user.email);
         binding.birthdateProfile.setText(user.birthDay);
-        setGenderRadioButton(Gender.fromValue(user.gender));
+        if (user.getGender() != null) {
+            setGenderRadioButton(Gender.fromValue(user.gender));
+        }
         binding.addressProfile.setText(user.address);
         if (user.city != null) {
             // Tìm tên tỉnh/thành phố từ provinceList bằng Stream API
