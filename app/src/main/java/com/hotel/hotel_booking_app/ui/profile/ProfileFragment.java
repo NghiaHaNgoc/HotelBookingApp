@@ -264,10 +264,6 @@ public class ProfileFragment extends Fragment {
             user.setAddress(binding.addressProfile.getText().toString());
             handleSubmitFormProfile();
         });
-        NavController navController = Navigation.findNavController(getActivity(),R.id.nav_host_fragment_content_main);
-        binding.btnNavigateHomePage.setOnClickListener(v -> {
-            navController.navigate(R.id.action_nav_profile_to_nav_home);
-        });
 
         // Inflate the layout for this fragment
         return binding.getRoot();

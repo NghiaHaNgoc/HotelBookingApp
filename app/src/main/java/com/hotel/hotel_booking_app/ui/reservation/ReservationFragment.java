@@ -9,7 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import android.text.Editable;
 import android.text.InputFilter;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -79,6 +81,91 @@ public class ReservationFragment extends Fragment {
         editTextAdultNumber = binding.editTextAdultNumber;
         editTextKidNumber = binding.editTextKidNumber;
 
+        editTextDateFromPicker.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                binding.dateFromPickerInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        editTextTimeFromPicker.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                binding.timeFromPickerInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        editTextDateToPicker.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                binding.dateToPickerInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        editTextTimeToPicker.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                binding.timeToPickerInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
+        editTextAdultNumber.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                binding.inputLayoutAdultNumber.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
         Calendar calendar = Calendar.getInstance();
 
         AlertDialog.Builder alertDialogError = new AlertDialog.Builder(getActivity());
@@ -126,6 +213,17 @@ public class ReservationFragment extends Fragment {
         }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DATE));
         dateToPickerDialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
         editTextDateToPicker.setOnClickListener(view -> {
+            dateToPickerDialog.show();
+        });
+
+        // Cập nhật MinDate của dateToPickerDialog mỗi khi mở nó
+        editTextDateToPicker.setOnClickListener(view -> {
+            // Kiểm tra nếu người dùng đã chọn ngày "From" và cập nhật MinDate của dateToPickerDialog
+            if (zonedDateTimeFrom.get() != null) {
+                Calendar selectedDateFrom = Calendar.getInstance();
+                selectedDateFrom.set(zonedDateTimeFrom.get().getYear(), zonedDateTimeFrom.get().getMonthValue() - 1, zonedDateTimeFrom.get().getDayOfMonth());
+                dateToPickerDialog.getDatePicker().setMinDate(selectedDateFrom.getTimeInMillis());
+            }
             dateToPickerDialog.show();
         });
 
@@ -281,31 +379,31 @@ public class ReservationFragment extends Fragment {
             , String adultNumber) {
         String requiredErrorMessage =
                 getContext().getResources().getString(R.string.require_input_message);
-        String exceedCapacityErrorMessage =
-                getContext().getResources().getString(R.string.exceed_capacity_limit_message);
+//        String exceedCapacityErrorMessage =
+//                getContext().getResources().getString(R.string.exceed_capacity_limit_message);
         boolean isValid = true;
         if (dateFrom.isEmpty()) {
-            binding.editTextDateFromPicker.setError(requiredErrorMessage);
+            binding.dateFromPickerInputLayout.setError(requiredErrorMessage);
             isValid = false;
         }
 
         if (timeFrom.isEmpty()) {
-            binding.editTextTimeFromPicker.setError(requiredErrorMessage);
+            binding.timeFromPickerInputLayout.setError(requiredErrorMessage);
             isValid = false;
         }
 
         if (dateTo.isEmpty()) {
-            binding.editTextDateToPicker.setError(requiredErrorMessage);
+            binding.dateToPickerInputLayout.setError(requiredErrorMessage);
             isValid = false;
         }
 
         if (timeTo.isEmpty()) {
-            binding.editTextTimeToPicker.setError(requiredErrorMessage);
+            binding.timeToPickerInputLayout.setError(requiredErrorMessage);
             isValid = false;
         }
 
         if (adultNumber.isEmpty()) {
-            binding.editTextAdultNumber.setError(requiredErrorMessage);
+            binding.inputLayoutAdultNumber.setError(requiredErrorMessage);
             isValid = false;
         }
         // after all validation return true.

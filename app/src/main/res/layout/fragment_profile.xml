@@ -81,7 +81,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="25dp"
-                            android:text="Personal information"
+                            android:text="@string/person_infor"
                             android:textSize="25sp"
                             android:textStyle="bold" />
 
@@ -271,7 +271,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="25dp"
-                            android:text="Location"
+                            android:text="@string/location"
                             android:textSize="25sp"
                             android:textStyle="bold" />
 
@@ -394,25 +394,6 @@
                             android:textStyle="bold"
                             app:cornerRadius="12dp"
                             android:backgroundTint="@color/purple_500" />
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/btnNavigateHomePage"
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:layout_marginStart="32dp"
-                            android:layout_marginTop="16dp"
-                            android:layout_marginEnd="32dp"
-                            android:text="@string/back_to_home_page"
-                            android:textColor="#ffffff"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            app:cornerRadius="12dp"
-                            android:backgroundTint="@color/teal_200"
-                            app:icon="@drawable/baseline_keyboard_double_arrow_left"
-                            app:iconTint="#ffffff"
-                            app:iconGravity="textStart"
-                            app:iconSize="30dp"
-                            app:iconPadding="10dp"/>
 
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
