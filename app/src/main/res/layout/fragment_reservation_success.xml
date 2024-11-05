@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.reservation.ReservationSuccessFragment">
 
@@ -191,46 +191,33 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
-        <Button
-            android:id="@+id/button_reservation_success_payment"
-            android:drawableLeft="@drawable/qr_code_scanner"
-            style="@style/Widget.Material3.Button.TonalButton"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/payment" />
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_reservation_success_reservation_history"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="@string/reservation_history" />
+
+            <Button
+                android:id="@+id/button_reservation_success_home"
+                style="@style/Widget.Material3.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="@string/menu_home" />
+
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/button_reservation_success_reservation_history"
-            style="@style/Widget.Material3.Button.OutlinedButton"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="10dp"
-            android:layout_weight="1"
-            android:text="@string/reservation_history" />
-
-        <Button
-            android:id="@+id/button_reservation_success_home"
-            style="@style/Widget.Material3.Button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="20dp"
-            android:layout_weight="1"
-            android:text="@string/menu_home" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

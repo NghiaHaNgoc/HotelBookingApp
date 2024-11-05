@@ -71,14 +71,35 @@
                 style="@style/TextAppearance.Material3.BodyLarge"
                 android:text="\u25CF avfgng"/>
             <TextView
-                android:visibility="gone"
                 android:layout_marginTop="10dp"
                 android:paddingStart="15dp"
                 android:id="@+id/type_room_amenities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/TextAppearance.Material3.BodyLarge"
-                android:text="\u25CF avfgng"/>
+                android:text="\u25CF Amenities" />
+            <TextView
+                android:paddingStart="25dp"
+                android:id="@+id/type_room_amenities_general"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:text="\u25CF Amenities"/>
+            <TextView
+                android:paddingStart="25dp"
+                android:id="@+id/type_room_amenities_bathroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:text="\u25CF Amenities"/>
+            <TextView
+                android:paddingStart="25dp"
+                android:id="@+id/type_room_amenities_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:text="\u25CF Amenities"/>
+
             <TextView
                 android:layout_marginTop="10dp"
                 android:paddingStart="15dp"

@@ -55,7 +55,11 @@ public class ReservationSuccessFragment extends Fragment {
         binding.buttonReservationSuccessHome.setOnClickListener(view -> {
             NavController navController = Navigation.findNavController(getView());
             navController.popBackStack(R.id.nav_home, false);
+        });
 
+        // Action go to history
+        binding.buttonReservationSuccessReservationHistory.setOnClickListener(view -> {
+            Navigation.findNavController(getView()).navigate(R.id.nav_reservation_history);
         });
 
         return binding.getRoot();
