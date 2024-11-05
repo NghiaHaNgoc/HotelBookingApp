@@ -156,4 +156,13 @@
     <string name="personal_information">Personal information</string>
     <string name="location">Location</string>
 
+    <string name="capacity">Capacity</string>
+    <string name="location">Location</string>
+    <string name="person_infor">Personal information</string>
+    <string name="booking">Booking</string>
+
+    <string name="reservation_infor">Your reservation information</string>
+    <string name="payment_deposit">Payment deposit</string>
+    <string name="relation_deposit_price_booking">You pay a deposit of 50% of the total booking price. You will pay the remaining 50% when you arrive at the reception.</string>
+    <string name="deposit_note">You can deposit now by scanning the qr code below or you can deposit later but the deposit deadline is before the booking date.</string>
 </resources>

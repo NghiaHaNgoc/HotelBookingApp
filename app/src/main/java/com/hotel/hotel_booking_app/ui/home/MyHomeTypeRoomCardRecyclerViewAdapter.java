@@ -56,6 +56,13 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
                 holder.title.setText(typeRoom.titleEn);
         }
 
+        String capacityFormat = typeRoomList.get(position).adultCapacity + " adults and " + typeRoomList.get(position).kidsCapacity + " kids";
+
+        String capacity = String.format("%s: %s",
+                StringUtil.capitalize(context.getResources().getString(R.string.capacity)),
+                capacityFormat);
+        holder.capacity.setText(capacity);
+
         String price = String.format("%s: %s VND/%s",
                 StringUtil.capitalize(context.getResources().getString(R.string.price)),
                 typeRoomList.get(position).basePrice,
@@ -79,6 +86,7 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final ImageView image;
         public final TextView title;
+        public final TextView capacity;
         public final TextView price;
 
 
@@ -86,6 +94,7 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
             super(binding.getRoot());
             image = binding.imageHomeTypeRoom;
             title = binding.textHomeTypeRoomTitle;
+            capacity = binding.textHomeTypeRoomCapacity;
             price = binding.textHomeTypeRoomPrice;
         }
 

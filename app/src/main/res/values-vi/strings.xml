@@ -155,4 +155,13 @@
     <string name="personal_information">Thông tin cá nhân</string>
     <string name="location">Vị trí</string>
 
+    <string name="capacity">Sức chứa</string>
+    <string name="location">Quê quán</string>
+    <string name="person_infor">Thông tin cá nhân</string>
+    <string name="booking">Đặt phòng</string>
+
+    <string name="reservation_infor">Thông tin đặt phòng của bạn</string>
+    <string name="payment_deposit">Thanh toán tiền đặt cọc</string>
+    <string name="relation_deposit_price_booking">Bạn trả tiền đặt cọc 50% tổng giá đặt phòng. Bạn sẽ thanh toán 50% còn lại khi đến quầy lễ tân.</string>
+    <string name="deposit_note">Bạn có thể gửi tiền ngay bằng cách quét mã QR bên dưới hoặc bạn có thể gửi tiền sau nhưng thời hạn gửi tiền là trước ngày đặt phòng.</string>
 </resources>
