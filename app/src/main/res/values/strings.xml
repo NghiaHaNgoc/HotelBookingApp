@@ -164,4 +164,8 @@
     <string name="payment_deposit">Payment deposit</string>
     <string name="relation_deposit_price_booking">You pay a deposit of 50% of the total booking price. You will pay the remaining 50% when you arrive at the reception.</string>
     <string name="deposit_note">You can deposit now by scanning the qr code below or you can deposit later but the deposit deadline is before the booking date.</string>
+
+    <string name="adults">adults</string>
+    <string name="kids">kids</string>
+    <string name="and">and</string>
 </resources>

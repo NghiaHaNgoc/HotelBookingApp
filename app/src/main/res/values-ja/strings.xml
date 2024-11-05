@@ -164,4 +164,8 @@
     <string name="payment_deposit">支払いデポジット</string>
     <string name="relation_deposit_price_booking">予約総額の 50% を前金としてお支払いいただきます。残りの 50% は受付時にお支払いいただきます。</string>
     <string name="deposit_note">下記の QR コードをスキャンして今すぐ入金するか、後で入金することもできますが、入金期限は予約日前となります。</string>
+
+    <string name="adults">アダルト</string>
+    <string name="kids">子供たち</string>
+    <string name="and">と</string>
 </resources>

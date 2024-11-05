@@ -3,6 +3,7 @@ package com.hotel.hotel_booking_app.ui.home;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -56,7 +57,16 @@ public class MyHomeTypeRoomCardRecyclerViewAdapter extends RecyclerView.Adapter<
                 holder.title.setText(typeRoom.titleEn);
         }
 
-        String capacityFormat = typeRoomList.get(position).adultCapacity + " adults and " + typeRoomList.get(position).kidsCapacity + " kids";
+        @SuppressLint("DefaultLocale")
+        String capacityFormat = String.format(
+                "%d %s %s %d %s",
+                typeRoomList.get(position).adultCapacity,
+                context.getResources().getString(R.string.adults),
+                context.getResources().getString(R.string.and),
+                typeRoomList.get(position).kidsCapacity,
+                context.getResources().getString(R.string.kids)
+        );
+
 
         String capacity = String.format("%s: %s",
                 StringUtil.capitalize(context.getResources().getString(R.string.capacity)),
