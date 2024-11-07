@@ -24,10 +24,14 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
 import com.hotel.hotel_booking_app.Enum.Gender;
 import com.hotel.hotel_booking_app.R;
 import com.hotel.hotel_booking_app.databinding.FragmentProfileBinding;
@@ -41,6 +45,8 @@ import com.hotel.hotel_booking_app.util.FileUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
 import java.time.Instant;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
@@ -86,45 +92,91 @@ public class ProfileFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         isFirstLaunch = true;
-        accountSharedPreferences = getContext().getSharedPreferences("account", Context.MODE_PRIVATE);
-
-        String jsonStringProvinces = FileUtil.parseJSON(requireContext(), R.raw.provinces);
-        JsonArray jsonArrayProvinces = JsonParser.parseString(jsonStringProvinces).getAsJsonArray();
-
-        for (JsonElement element : jsonArrayProvinces) {
-            JsonObject provinceObject = element.getAsJsonObject();
-
-            String provinceName = provinceObject.get("province_name").getAsString();
-            String provinceId = provinceObject.get("province_id").getAsString();
-
-            provincesList.add(new Province(provinceName, provinceId));
+        accountSharedPreferences = getContext().getSharedPreferences("account",
+                Context.MODE_PRIVATE);
+        Gson gson = new GsonBuilder()
+                .setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES)
+                .create();
+        try {
+            JsonReader reader = new JsonReader(
+                    new InputStreamReader(getResources().openRawResource(R.raw.provinces))
+            );
+            reader.beginArray();
+            while (reader.hasNext()) {
+                Province province = gson.fromJson(reader, Province.class);
+                provincesList.add(province);
+            }
+            reader.endArray();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
-        String jsonStringDistricts = FileUtil.parseJSON(requireContext(), R.raw.districts);
-        JsonArray jsonArrayDistricts = JsonParser.parseString(jsonStringDistricts).getAsJsonArray();
-
-        for (JsonElement element : jsonArrayDistricts) {
-            JsonObject districtObject = element.getAsJsonObject();
-
-            String districtName = districtObject.get("district_name").getAsString();
-            String districtId = districtObject.get("district_id").getAsString();
-            String provinceId = districtObject.get("province_id").getAsString();
-
-            districtsList.add(new District(districtName, districtId, provinceId));
+        try {
+            JsonReader reader = new JsonReader(
+                    new InputStreamReader(getResources().openRawResource(R.raw.districts))
+            );
+            reader.beginArray();
+            while (reader.hasNext()) {
+                District district = gson.fromJson(reader, District.class);
+                districtsList.add(district);
+            }
+            reader.endArray();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
-        String jsonStringWards = FileUtil.parseJSON(requireContext(), R.raw.wards);
-        JsonArray jsonArrayWards = JsonParser.parseString(jsonStringWards).getAsJsonArray();
-
-        for (JsonElement element : jsonArrayWards) {
-            JsonObject wardObject = element.getAsJsonObject();
-
-            String wardName = wardObject.get("ward_name").getAsString();
-            String wardId = wardObject.get("ward_id").getAsString();
-            String districtId = wardObject.get("district_id").getAsString();
-
-            wardsList.add(new Ward(wardName, wardId, districtId));
+        try {
+            JsonReader reader = new JsonReader(
+                    new InputStreamReader(getResources().openRawResource(R.raw.wards))
+            );
+            reader.beginArray();
+            while (reader.hasNext()) {
+                Ward ward = gson.fromJson(reader, Ward.class);
+                wardsList.add(ward);
+            }
+            reader.endArray();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
+
+//        String jsonStringProvinces = FileUtil.parseJSON(requireContext(), R.raw.provinces);
+//        JsonArray jsonArrayProvinces = JsonParser.parseString(jsonStringProvinces)
+//        .getAsJsonArray();
+//
+//        for (JsonElement element : jsonArrayProvinces) {
+//            JsonObject provinceObject = element.getAsJsonObject();
+//
+//            String provinceName = provinceObject.get("province_name").getAsString();
+//            String provinceId = provinceObject.get("province_id").getAsString();
+//
+//            provincesList.add(new Province(provinceName, provinceId));
+//        }
+
+//        String jsonStringDistricts = FileUtil.parseJSON(requireContext(), R.raw.districts);
+//        JsonArray jsonArrayDistricts = JsonParser.parseString(jsonStringDistricts).getAsJsonArray();
+//
+//        for (JsonElement element : jsonArrayDistricts) {
+//            JsonObject districtObject = element.getAsJsonObject();
+//
+//            String districtName = districtObject.get("district_name").getAsString();
+//            String districtId = districtObject.get("district_id").getAsString();
+//            String provinceId = districtObject.get("province_id").getAsString();
+//
+//            districtsList.add(new District(districtName, districtId, provinceId));
+//        }
+//
+//        String jsonStringWards = FileUtil.parseJSON(requireContext(), R.raw.wards);
+//        JsonArray jsonArrayWards = JsonParser.parseString(jsonStringWards).getAsJsonArray();
+//
+//        for (JsonElement element : jsonArrayWards) {
+//            JsonObject wardObject = element.getAsJsonObject();
+//
+//            String wardName = wardObject.get("ward_name").getAsString();
+//            String wardId = wardObject.get("ward_id").getAsString();
+//            String districtId = wardObject.get("district_id").getAsString();
+//
+//            wardsList.add(new Ward(wardName, wardId, districtId));
+//        }
 
         pickMedia =
                 registerForActivityResult(new ActivityResultContracts.PickVisualMedia(), uri -> {
@@ -132,7 +184,8 @@ public class ProfileFragment extends Fragment {
                     // photo picker.
                     if (uri != null) {
                         try {
-                            InputStream inputStream = getContext().getContentResolver().openInputStream(uri);
+                            InputStream inputStream =
+                                    getContext().getContentResolver().openInputStream(uri);
                             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
                             byte[] buffer = new byte[1024];
                             int bytesRead;
@@ -188,7 +241,8 @@ public class ProfileFragment extends Fragment {
             user.setCity(selectedProvinceId);
 
             List<District> filteredDistricts = districtsList.stream()
-                    .filter(district -> district.getProvinceId().equals(selectedProvinceId)) // điều kiện lọc
+                    .filter(district -> district.getProvinceId().equals(selectedProvinceId)) //
+                    // điều kiện lọc
                     .collect(Collectors.toList());
 
             setListAutoComplete(binding.districtProfile, filteredDistricts);
@@ -206,7 +260,8 @@ public class ProfileFragment extends Fragment {
             user.setDistrict(selectedDistrictId);
 
             List<Ward> filteredWards = wardsList.stream()
-                    .filter(ward -> ward.getDistrictId().equals(selectedDistrictId)) // điều kiện lọc
+                    .filter(ward -> ward.getDistrictId().equals(selectedDistrictId)) // điều kiện
+                    // lọc
                     .collect(Collectors.toList());
 
             setListAutoComplete(binding.wardProfile, filteredWards);
@@ -245,7 +300,7 @@ public class ProfileFragment extends Fragment {
                 new AtomicReference<>(Instant.EPOCH.atZone(TimeZone.getDefault().toZoneId()));
 
         DatePickerDialog birthDatePickerDialog = new DatePickerDialog(getContext(), (datePicker, i,
-                                                                                  i1, i2) -> {
+                                                                                     i1, i2) -> {
             zonedBirthDate.set(zonedBirthDate.get().withYear(i).withMonth(i1 + 1).withDayOfMonth(i2));
             String dateFormat = String.format("%02d-%02d-%02d", i2, i1 + 1, i);
             binding.birthdateProfile.setText(dateFormat);
@@ -283,8 +338,10 @@ public class ProfileFragment extends Fragment {
 
     }
 
-    private <T> void setListAutoComplete(AutoCompleteTextView autoCompleteTextView, List<T> listOption) {
-        ArrayAdapter<T> adapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_dropdown_item_1line, listOption);
+    private <T> void setListAutoComplete(AutoCompleteTextView autoCompleteTextView,
+                                         List<T> listOption) {
+        ArrayAdapter<T> adapter = new ArrayAdapter<>(requireContext(),
+                android.R.layout.simple_dropdown_item_1line, listOption);
         autoCompleteTextView.setAdapter(adapter);
     }
 
@@ -301,13 +358,15 @@ public class ProfileFragment extends Fragment {
     private void setDefaultValueFormProfile() {
         String link_avatar = Objects.requireNonNullElse(
                 user.getLinkAvatar(),
-                "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3407.jpg"
+                "https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media" +
+                        "-user-image-gray-avatar-icon-blank-profile-silhouette-vector" +
+                        "-illustration_561158-3407.jpg"
         );
         Glide
-            .with(binding.avatarProfile)
-            .load(link_avatar)
-            .apply(RequestOptions.circleCropTransform())
-            .into(binding.avatarProfile);
+                .with(binding.avatarProfile)
+                .load(link_avatar)
+                .apply(RequestOptions.circleCropTransform())
+                .into(binding.avatarProfile);
 
         binding.fullnameProfile.setText(
                 String.format(
@@ -401,7 +460,7 @@ public class ProfileFragment extends Fragment {
                 ApiResponse<User> res = response.body();
 
                 if (res != null && res.status == 200) {
-                    SharedPreferences.Editor editor =  accountSharedPreferences.edit();
+                    SharedPreferences.Editor editor = accountSharedPreferences.edit();
                     editor.putString("email", user.email);
                     editor.putString("firstname", user.firstname);
                     editor.putString("surname", user.surname);

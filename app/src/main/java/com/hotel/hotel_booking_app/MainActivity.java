@@ -94,13 +94,13 @@ public class MainActivity extends AppCompatActivity {
 
         if (accountSharedPreferences.getBoolean("isSignedIn", false)) {
             email.setText(accountSharedPreferences.getString("email", ""));
-            Glide.with(avatar).load(accountSharedPreferences.getString("linkAvatar", "https://i.ibb" +
-                    ".co/CvpTcNq/avatar.png")).apply(RequestOptions.circleCropTransform()).into(avatar);
+            Glide.with(avatar).load(accountSharedPreferences.getString("linkAvatar", ""))
+                    .placeholder(R.drawable.user).apply(RequestOptions.circleCropTransform()).into(avatar);
             fullName.setText(String.format("%s %s", accountSharedPreferences.getString(
                     "firstname", ""), accountSharedPreferences.getString("surname", "")));
 
         } else {
-            Glide.with(avatar).load("https://i.ibb.co/CvpTcNq/avatar.png").apply(RequestOptions.circleCropTransform()).into(avatar);
+            avatar.setImageResource(R.drawable.user);
             fullName.setText(getResources().getString(R.string.account));
             email.setText("");
         }

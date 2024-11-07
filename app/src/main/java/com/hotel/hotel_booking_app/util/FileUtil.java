@@ -25,6 +25,16 @@ public class FileUtil {
         return Base64.encodeToString(outputStream.toByteArray(), Base64.DEFAULT);
     }
 
+    public static String inputStreamToString(InputStream inputStream) throws IOException {
+        ByteArrayOutputStream result = new ByteArrayOutputStream();
+        byte[] buffer = new byte[1024];
+        int length;
+        while ((length = inputStream.read(buffer)) != -1) {
+            result.write(buffer, 0, length);
+        }
+        return result.toString();
+    }
+
     public static String parseJSON(Context context, int rawResourceId) {
         String json = null;
 
